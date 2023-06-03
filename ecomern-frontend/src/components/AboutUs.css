@@ -1,0 +1,32 @@
+.aboutUs {
+  background: #fcf7f7;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 30px;
+  border: 20px solid rgba(255, 255, 255, 0.18);
+  padding: 20px !important;
+  margin: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.imageContainer {
+  margin: 20px;
+  /* margin-left: 570px; */
+  /* position: fixed; */
+}
+
+.contentContainer {
+  margin: 20px;
+}
+
+@media (min-width: 768px) {
+  .aboutUs {
+    padding: 40px;
+  }
+}

@@ -1,0 +1,12 @@
+.ink {
+    color: #FFF;
+  }
+  .ink:hover {
+     color: #00F
+  }
+[type=search] {
+   outline-offset: 0px !important;
+   border-radius: 30px !important;
+   line-height: 35px;
+}
+

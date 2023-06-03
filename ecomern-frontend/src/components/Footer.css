@@ -1,0 +1,41 @@
+.footer{
+    background-color: #152b51;
+    /* position: fixed; */
+    /* z-index: 100; */
+    /* width: 100%; */
+}
+
+
+.text-uppercase{
+    color: #BA9364;
+}
+/* .text-uppercase:hover{
+    color: #fff;
+} */
+
+/* .text-center{
+    background: #152b51;
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 0px;
+} */
+
+.name{
+    margin-left: -48px !important;
+}
+
+.name:hover{
+    color: white;
+    text-decoration: underline
+}
+
+.text-reset{
+    text-decoration: none;
+}
+
+/* .text-reset:hover {
+    
+} */

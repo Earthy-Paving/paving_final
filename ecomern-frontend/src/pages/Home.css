@@ -1,0 +1,106 @@
+/* *{
+    background-color: white;
+} */
+
+
+.category-tile {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 30px;
+    background-color: #f8e7f3;
+    border-radius: 20px;
+}
+
+.card {
+    border-radius: 30px !important;
+    width: 15rem !important;
+    background: rgba( 245, 240, 240, 0.45 );
+}
+img.card-img-top.product-preview-img {
+    border-radius: 3px !important;
+    margin-left: -9px !important;
+}
+
+.category-tile:hover {
+    transform: scale(1.05);
+}
+
+.sale__banner--container img {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.home-banner{
+    width: 70%;
+}
+
+.logo{
+    height: 200px !important;
+    width: 200px !important;
+    margin-left: -20px !important;
+    margin-top: -28.5px !important;
+
+}
+
+.featured-products-container{
+    background: #fcf7f7;
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 30px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 30px;
+/* margin-top: 100px !important; */
+}
+
+
+/* .d-flex{
+    background: rgba( 245, 240, 240, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+} */
+
+/* .recent-products-container{
+    background: rgba( 245, 240, 240, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );   
+} */
+
+
+/* .sale__banner--container{
+    background: rgba( 245, 240, 240, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+background-color: #f3ecf3;
+} */
+
+.recent-products-container{
+    background: rgba( 245, 240, 240, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 ); 
+background-color: #f3ecf3;
+padding: 30px;
+}
