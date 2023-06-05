@@ -6,6 +6,7 @@ import Loading from "../components/Loading";
 import ProductPreview from "../components/ProductPreview";
 import "./CategoryPage.css";
 import Pagination from "../components/Pagination";
+import Navigation from "../components/Navigation";
 function CategoryPage() {
     const { category } = useParams();
     const [loading, setLoading] = useState(false);
@@ -37,6 +38,8 @@ function CategoryPage() {
     }
 
     return (
+        <p>
+            <Navigation/>
         <div className="category-page-container">
            <div className={`pt-3 ${category}-banner-container category-banner-container`} id="icon" style={{ color: "white" }}>
   <h1 className="text-center">
@@ -44,8 +47,8 @@ function CategoryPage() {
   </h1>
 </div>
 
-            <div className="filters-container d-flex justify-content-center pt-4 pb-4">
-                <input type="search" placeholder="                          Search"  onChange={(e) => setSearchTerm(e.target.value)} />
+            <div className="filters-container d-flex justify-content-center pt-4 pb-4" style={{width:"19%", marginLeft:"40%", background:"white"}}>
+                <input type="search" placeholder="                              Search"  onChange={(e) => setSearchTerm(e.target.value)} />
             </div>
             {productsSearch.length === 0 ? (
                 <h1>No products to show</h1>
@@ -59,6 +62,7 @@ function CategoryPage() {
                 </Container>
             )}
         </div>
+        </p>
     );
 }
 

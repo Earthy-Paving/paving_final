@@ -4,17 +4,22 @@ import React from 'react';
 import './AboutUs.css';
 import ImageGallery from '../components/carousel';
 import ContactUs from './ContactUs';
+import Navigation from './Navigation';
 
 const AboutUs = () => {
   return (
+    <p>
+    <Navigation style={{position:"fixed",top:"0",width:"100%",zIndex:"100"}}/>
+    
     <div className="about-us-container">
-      <div className="about-us-content">
-        <h1 className="about-us-title">About Us</h1>
+      
+      <div className="about-us-content"><br/><br/> 
+        <h1 className="about-us-title"><u>About Us</u></h1>
         <p style={{fontSize:"20px"}}>At <b>Earthy Paving</b>, we are committed to delivering high-quality paving solutions to our clients at an affordable price. We understand that your property is a significant investment, which is why we provide durable and long-lasting paving services that will enhance its value and aesthetics.
           Our team of experienced professionals is dedicated to providing exceptional customer service and ensuring that every project is completed to the highest standards. We offer a wide range of paving designs to suit your style and preferences, and our installation process is quick and efficient.
           We take pride in using only the best materials and equipment to deliver paving solutions that will stand the test of time. With <b>Earthy Paving</b>, you can be confident that your property is in good hands. Contact us today to learn more about our services and how we can help transform your outdoor space.</p>
         <div><br/>
-          <h2>Our Team</h2>
+          <h2><u>Our Team</u></h2>
         </div><br/>
         <div className="team-members">
           <div className="team-member">
@@ -57,6 +62,7 @@ const AboutUs = () => {
         <ImageGallery />
       </div>
     </div>
+    </p>
   );
 };
 

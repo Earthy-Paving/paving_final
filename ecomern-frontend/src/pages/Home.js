@@ -8,6 +8,7 @@ import "./Home.css";
 import { useDispatch, useSelector } from "react-redux";
 import { updateProducts } from "../features/productSlice";
 import ProductPreview from "../components/ProductPreview";
+import Navigation from "../components/Navigation";
 // import Carousel from "../components/carousel"
 
 function Home() {
@@ -19,9 +20,11 @@ function Home() {
     }, []);
     return (
         <div>
-            <br /><br />
-            {/* <img src="https://res.cloudinary.com/dy1pydfmg/image/upload/v1683623491/Pavestone_z0vrip.jpg" className="home-banner" /> */}
+            <img src="https://res.cloudinary.com/dy1pydfmg/image/upload/v1683623491/Pavestone_z0vrip.jpg" className="home-banner" style={{width:"100%",height:"800px"}}     />
             {/* < Carousel /> */}
+            <div>
+              <Navigation/>
+            </div>
 
             {/* <div id ="banner">
                 <div id = "banner-images">
@@ -31,7 +34,10 @@ function Home() {
                     <img src = "https://res.cloudinary.com/dy1pydfmg/image/upload/v1685290966/7_no6cfp.png"></img>
                     
                 </div>
+            
             </div> */}
+            
+            
             <div className="featured-products-container container mt-4"><br />
                 <h2 style={{"backgroundColor":"#fcf7f7"}}>Latest products</h2>
                 {/* last products here */}

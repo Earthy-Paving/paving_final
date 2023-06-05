@@ -44,7 +44,7 @@ function App() {
         <div className="App">
             <BrowserRouter>
                 <ScrollToTop />
-                <Navigation />
+                {/* <Navigation /> */}
                 <Routes>
                     <Route index element={<Home />} />
                     {!user && (

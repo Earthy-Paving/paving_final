@@ -146,6 +146,7 @@ import { useUpdateProductMutation } from "../services/appApi";
 import axios from "../axios";
 import "./NewProduct.css";
 import "./EditProduct.css";
+import Navigation from "../components/Navigation";
 
 function EditProductPage() {
   const { id } = useParams();
@@ -222,6 +223,8 @@ function EditProductPage() {
   }
 
   return (
+    <p>
+    <Navigation/>
     <Container className="edit">
       <Row>
         <Col md={6} className="new-product__form--container">
@@ -302,6 +305,7 @@ function EditProductPage() {
         {/* <Col md={6} className="new-product__image--container"></Col> */}
       </Row>
     </Container>
+    </p>
   );
 }
 

@@ -13,6 +13,7 @@ import { useAddToCartMutation } from "../services/appApi";
 import ToastMessage from "../components/ToastMessage";
 import ReviewForm from '../components/ReviewForm';
 import ReviewList from '../components/ReviewList';
+import Navigation from "../components/Navigation";
 
 function ProductPage() {
     const { id } = useParams();
@@ -67,6 +68,8 @@ function ProductPage() {
 
 
       return (
+        <p>
+          <Navigation/>
         <Container className="pt-4 " style={{ position: "relative" }}>
           <Row className="row">
             <Col lg={6} className="colum" style={{marginTop:'58px'}}>
@@ -149,6 +152,7 @@ function ProductPage() {
             </div>
           </div>
         </Container>
+        </p>
       );
     }
     

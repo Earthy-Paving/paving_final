@@ -1,5 +1,5 @@
 import axios from "../axios";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Navbar, Button, Nav, NavDropdown, Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
@@ -33,7 +33,29 @@ function Navigation() {
       axios.post(`/users/${user._id}/updateNotifications`);
   }
 
+  useEffect(() =>{
+    const handleScroll = ()=>{
+      const navbar = document.getElementById("navbar");
+      const image = document.querySelector(".container img");
+      const imageBottom = image.offsetTop + image.offsetHeight;
+
+      if (window.pageYOffset > imageBottom) {
+        navbar.classList.add("fixed-top");
+      }
+      else{
+        navbar.classList.remove("fixed-top")
+      }
+    }
+    window.addEventListener("scroll",handleScroll)
+    return ()=>{
+      window.removeEventListener("scroll",handleScroll)
+    }
+  }, []);
+
   return (
+    <div className="container">
+      {/* <img src = {"https://res.cloudinary.com/dy1pydfmg/image/upload/v1683837111/page-1_ybdu8p.jpg"} alt = "Your Image"/> */}
+      <nav id="navbar"className="d-flex align-items-center">
     <Navbar expand="lg" className="navibar">
       <Container className="contain">
         <LinkContainer to="/" className="navlink">
@@ -137,6 +159,8 @@ function Navigation() {
         )}
       </div>
     </Navbar>
+    </nav>
+    </div>
   );
 }
 

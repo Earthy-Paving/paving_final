@@ -5,10 +5,13 @@ import DashboardProducts from "../components/DashboardProducts";
 import OrdersAdminPage from "../components/OrdersAdminPage";
 import Reviews from "../components/Reviews";
 import "./AdminDashboard.css"
+import Navigation from "../components/Navigation";
 
 
 function AdminDashboard() {
     return (
+        <p>
+            <Navigation/>
         <Container className="dashboard">
             <Tab.Container defaultActiveKey="products">
                 <Row>
@@ -50,6 +53,7 @@ function AdminDashboard() {
                 </Row>
             </Tab.Container>
         </Container>
+        </p>
     );
 }
 

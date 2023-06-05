@@ -1,8 +1,10 @@
 .navibar {
     background-color: #152b51;
     /* background-color: transparent; */
-    /* position: fixed; */
-    /* z-index: -1; */
+    position: relative;
+    top:0;
+    width: 100%;
+    z-index: 100;
   }
   
   .earth {

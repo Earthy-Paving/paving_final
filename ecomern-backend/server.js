@@ -19,6 +19,7 @@ const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const imageRoutes = require('./routes/imageRoutes');
 const reviewsRoutes = require('./routes/reviewsRoutes');
+const indexRouter = require('./routes/index');
 
 
 app.use(cors());
@@ -29,7 +30,7 @@ app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
 app.use('/images', imageRoutes);
 app.use('/reviews', reviewsRoutes);
-
+app.use('/', indexRouter);
 
 
 app.post('/create-payment', async(req, res)=> {

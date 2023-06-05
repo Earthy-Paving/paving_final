@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import { useIncreaseCartProductMutation, useDecreaseCartProductMutation, useRemoveFromCartMutation } from "../services/appApi";
 import "./CartPage.css";
 import Checkout from "./Checkout";
+import Navigation from "../components/Navigation";
 
 
 // const stripePromise = loadStripe("your_stripe_publishable_key");
@@ -28,6 +29,8 @@ function CartPage() {
     }
 
     return (
+        <p>
+            <Navigation/>
         <Container style={{ minHeight: "50vh" }} className="cart-container">
              {cart.length === 0 ? (
                 <Alert className="alert" variant="info">Shopping cart is empty. Add products to your cart</Alert>
@@ -77,6 +80,7 @@ function CartPage() {
                 )}
             {/* </Row> */}
         </Container>
+        </p>
     );
 }
 

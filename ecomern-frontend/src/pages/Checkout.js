@@ -7,6 +7,7 @@ import CheckoutForm from "../components/CheckoutForm";
 // import { useIncreaseCartProductMutation, useDecreaseCartProductMutation, useRemoveFromCartMutation } from "../services/appApi";
 // import "./CartPage.css";
 import "./Checkout.css";
+import Navigation from "../components/Navigation";
 // import { Button, Col, Container, Form, Row, Alert } from "react-bootstrap";
 
 const stripePromise = loadStripe("pk_test_51N5lmvDBrkoq40ZPf79HKKIdeGhP2d2jgYW2K6W4RyF2GpxmgwP19r6cXAEJ85AVhqPqoIllCzixzzPt75pwvKCx003YiYCpGH");
@@ -32,6 +33,8 @@ function Checkout () {
 
     // let cart = products.filter((product) => userCartObj[product._id] != null);
     return (
+        <p>
+            <Navigation/>
         <Container style={{ minHeight: "95vh" }} className="cart-container">
             <Row>
             <Col>
@@ -46,6 +49,7 @@ function Checkout () {
                 </Col> 
             </Row>
         </Container>
+        </p>
         )
 }
 // }

@@ -102,7 +102,7 @@ function Signup() {
                 </Button>
               </Form.Group>
               <p className="pt-3 text-center">
-                Don't have an account? <Link to="/login">Login</Link>{" "}
+                If you have an account? <Link to="/login">Login</Link>{" "}
               </p>
             </Form>
           </fieldset>

@@ -129,6 +129,7 @@ import { useNavigate } from "react-router-dom";
 import { useCreateProductMutation } from "../services/appApi";
 import axios from "../axios";
 import "./NewProduct.css";
+import Navigation from "../components/Navigation";
 
 function NewProduct() {
   const [name, setName] = useState("");
@@ -183,6 +184,8 @@ function NewProduct() {
   }
 
   return (
+    <p>
+      <Navigation/>
     <Container className="product">
       <Row>
         <Col md={6} className="new-product__form--container" style={{ marginLeft: "340px" }}>
@@ -248,6 +251,7 @@ function NewProduct() {
       </Row>
       <br />
     </Container>
+    </p>
   );
 }
 
