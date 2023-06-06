@@ -70,7 +70,7 @@ function ProductPage() {
       return (
         <p>
           <Navigation/>
-        <Container className="pt-4 " style={{ position: "relative" }}>
+        <Container className="pt-5 " style={{ position: "relative" }}>
           <Row className="row">
             <Col lg={6} className="colum" style={{marginTop:'58px'}}>
               <AliceCarousel
@@ -117,12 +117,12 @@ function ProductPage() {
                       Add to cart
                     </Button>
                   </ButtonGroup>
-                  <br />
-                  <br />
-                  <ReviewForm />
-                  <ReviewList />
-                  <br />
-                  <br />
+                  {/* <br />
+                  <br /> */}
+                  {/* <ReviewForm /> */}
+                  {/* <ReviewList /> */}
+                  {/* <br />
+                  <br /> */}
                 </>
               )}
     

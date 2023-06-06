@@ -20,7 +20,7 @@ function Home() {
     }, []);
     return (
         <div>
-            <img src="https://res.cloudinary.com/dy1pydfmg/image/upload/v1683623491/Pavestone_z0vrip.jpg" className="home-banner" style={{width:"100%",height:"800px"}}     />
+            {/* <img src="https://res.cloudinary.com/dy1pydfmg/image/upload/v1683623491/Pavestone_z0vrip.jpg" className="home-banner" style={{width:"100%",height:"800px"}}     /> */}
             {/* < Carousel /> */}
             <div>
               <Navigation/>
