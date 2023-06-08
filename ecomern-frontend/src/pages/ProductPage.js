@@ -11,8 +11,6 @@ import "./ProductPage.css";
 import { LinkContainer } from "react-router-bootstrap";
 import { useAddToCartMutation } from "../services/appApi";
 import ToastMessage from "../components/ToastMessage";
-import ReviewForm from '../components/ReviewForm';
-import ReviewList from '../components/ReviewList';
 import Navigation from "../components/Navigation";
 
 function ProductPage() {
@@ -71,15 +69,15 @@ function ProductPage() {
         <p>
           <Navigation/>
         <Container className="pt-5 " style={{ position: "relative" }}>
-          <Row className="row">
-            <Col lg={6} className="colum" style={{marginTop:'58px'}}>
+          <Row className="Row">
+            <Col lg={6} className="pt-4" style={{marginTop:'58px'}}>
               <AliceCarousel
                 mouseTracking
                 items={images}
                 controlsStrategy="alternate"
               />
             </Col>
-            <Col lg={6} className="pt-4" >
+            <Col lg={6} className="pt-4" style={{marginTop:"50px"}}>
               <h1>{product.name}</h1>
               <p>
                 <Badge bg="primary">{product.category}</Badge>
@@ -91,7 +89,7 @@ function ProductPage() {
               {user && !user.isAdmin && (
                 <>
                   <ButtonGroup style={{ width: "90%" }}>
-                    <Form.Select
+                    {/* <Form.Select
                       size="lg"
                       style={{ width: "40%", borderRadius: "0" }}
                       value={selectedOption}
@@ -101,8 +99,8 @@ function ProductPage() {
                       <option value="2">I want grass only</option>
                       <option value="3">I want stone only</option>
                       <option value="4">I want workers</option>
-                      {/* <option value="5">5</option> */}
-                    </Form.Select>
+                      <option value="5">5</option>
+                    </Form.Select> */}
                     <Button
                       size="lg"
                       onClick={() =>
@@ -113,7 +111,7 @@ function ProductPage() {
                           image: product.pictures[0].url,
                         })
                       }
-                    >
+                    style={{backgroundColor:"#152B51"}}>
                       Add to cart
                     </Button>
                   </ButtonGroup>
@@ -142,7 +140,7 @@ function ProductPage() {
           </Row>
           <div className="my-4">
             <h2>Similar Products</h2>
-            <div className="d-flex justify-content-center align-items-center flex-wrap">
+            <div className="d-flex justify-content-center align-items-center flex-wrap" style={{marginRight:"-200px"}}>
               <AliceCarousel
                 mouseTracking
                 items={similarProducts}

@@ -5,16 +5,16 @@ import Navigation from './Navigation';
 const AboutUs = () => {
   return (
     <div>
-      <Navigation/>
+      <Navigation/> <br/> <br/><br/><br/>
       <div className="about-us-container">
         <div className="about-us-header">
           <h1>About Us</h1>
-          <p>Welcome to our website! We are a team of passionate individuals dedicated to providing high-quality products and excellent customer service.</p>
+          <p style={{fontFamily:"sans-serif", fontSize:"25px"}}>Welcome to our website! We are a team of passionate individuals dedicated to providing high-quality products and excellent customer service.</p>
         </div>
 
         <div className="about-us-section">
           <div className="about-us-image">
-            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686057713/Team-Work_zr8tir.webp" alt="Teamwork" />
+            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686117739/our_-work-removebg-preview_g41vkj.png" alt="Teamwork" />
           </div>
           <div className="about-us-content">
             <h2>Our Story</h2>
@@ -28,13 +28,13 @@ const AboutUs = () => {
             <p>At our core, we are driven by a mission to inspire and empower people. We strive to develop products that enhance lives, foster creativity, and bring joy to our customers. Through continuous improvement and a relentless pursuit of excellence, we aim to make a positive impact in the lives of individuals around the globe.</p>
           </div>
           <div className="about-us-image">
-            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686058443/mission_w4rtk8.avif" alt="Mission" />
+            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686117739/our-mission-removebg-preview_psrymz.png" alt="Mission" />
           </div>
         </div>
 
         <div className="about-us-section">
           <div className="about-us-image">
-            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686058442/values_id5uxc.jpg" alt="Values" />
+            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686118751/human-resources-vector-removebg-preview_iq0efb.png" alt="Values" />
           </div>
           <div className="about-us-content">
             <h2>Our Values</h2>
@@ -49,7 +49,7 @@ const AboutUs = () => {
             <a href="/careers" className="btn">Explore Careers</a>
           </div>
           <div className="about-us-image">
-            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686058442/join-team_ene3i1.avif" alt="Join Our Team" />
+            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686118502/Hybrid-Meeting-Room-removebg-preview_a8ev4j.png" alt="Join Our Team" />
           </div>
         </div>
 
@@ -62,7 +62,7 @@ const AboutUs = () => {
             <div className="team-member">
               <img
                 className="team-member-avatar"
-                src="https://res.cloudinary.com/dejwpag1r/image/upload/v1685897812/raji01_bzst01.png"
+                src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686115991/raji01-removebg-preview_vtung7.png"
                 alt="Member 1"
               />
               <div className="team-member-info">
@@ -73,7 +73,7 @@ const AboutUs = () => {
             <div className="team-member">
               <img
                 className="team-member-avatar"
-                src="https://res.cloudinary.com/dejwpag1r/image/upload/v1685895769/sathu02_xp48vc.png"
+                src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686116156/sathu02-removebg-preview_esq560.png"
                 alt="Member 2"
               />
               <div className="team-member-info">
@@ -84,7 +84,7 @@ const AboutUs = () => {
             <div className="team-member">
               <img
                 className="team-member-avatar"
-                src="https://res.cloudinary.com/dejwpag1r/image/upload/v1685895769/saju1_g9va5s.jpg"
+                src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686116193/saju1-removebg-preview_clitic.png"
                 alt="Member 3"
               />
               <div className="team-member-info">

@@ -185,7 +185,7 @@ function NewProduct() {
 
   return (
     <p>
-      <Navigation/>
+      <Navigation/><br/><br/><br/>
     <Container className="product">
       <Row>
         <Col md={6} className="new-product__form--container" style={{ marginLeft: "340px" }}>

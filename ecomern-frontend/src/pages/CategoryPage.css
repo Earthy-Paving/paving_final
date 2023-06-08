@@ -3,18 +3,18 @@
 }
 
 .category-banner-container {
-    height: 200px;
+    height: 20px !important;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
-    padding: 15px;
+    padding: 50px;
     /* border: none; */
 }
 
 .text-center{
-   margin-top: 90px !important;
+   margin-top: 40px !important;
    color: #BA9364;
 }
 

@@ -1,8 +1,8 @@
 .footer{
     background-color: #152b51;
     /* position: fixed; */
-    /* z-index: 100; */
-    /* width: 100%; */
+    /* bottom: 0; */
+    /* top: auto; */
 }
 
 

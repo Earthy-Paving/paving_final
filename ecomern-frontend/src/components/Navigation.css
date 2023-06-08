@@ -2,7 +2,7 @@
   padding: 5px;
   margin: 0;
   height: 70px;
-  width: 100px !important;
+  width: 200px !important;
 }
 .home-banner {
   height: 100%;
@@ -28,6 +28,7 @@
 .navlinknav:hover{
   cursor: pointer;
   color: white !important;
+  background-color: #133571 !important;
 }
 .navlinknav1 {
   color: white;
@@ -101,6 +102,11 @@
 }
 .navibar {
   width: 100%;
+  background-color: #152B51;
+  position: fixed;top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 .container {
   position: relative;
@@ -129,4 +135,12 @@
 }
  .navibar {
   width: 100%;
+}
+
+#productDropdown{
+  color: #BA9364;
+}
+
+#productDropdown:hover{
+  color: white;
 }

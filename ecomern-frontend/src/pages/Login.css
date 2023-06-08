@@ -1,31 +1,82 @@
-/* *{
- background-color:"#aaa68e";
-}
-
-.login__form--container{
-    
-} */
 
 .login{
-    background: rgba( 255, 255, 255, 0 );
+    /* background: rgba( 255, 255, 255, 0 ); */
+    background-image: url("https://res.cloudinary.com/dy1pydfmg/image/upload/v1685290966/5_enogov.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover!important;
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 0px );
--webkit-backdrop-filter: blur( 0px );
-border-radius: 10px;
+backdrop-filter: blur( 5px );
+/* -webkit-backdrop-filter: blur( 0px ); */
+border-radius: 20px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-padding: 250px;
+padding: 350px;
+margin-top: 100px;
+margin-bottom: -25px;
 }
 
+
+
 .login__form--container{
-    background: rgba( 255, 255, 255, 0.5 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 2px );
--webkit-backdrop-filter: blur( 2px );
+    /* background: rgba( 255, 255, 255, 0.5 ); */
+ box-shadow: 0 8px 12px 0 rgba(220, 220, 220, 0.37);
+backdrop-filter: blur( 10px );
+-webkit-backdrop-filter: blur( 20px );
 border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-padding: 30px;
+/* border: 2px solid white; */
+
+padding: 35px;
+height: 500px;
 }
 
 .pt-3 {
     color: black !important;
 }
+
+.password-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .btn-login{
+    background-color: #152b51 !important;
+    width: 100%;
+    margin-top: 18px;
+    border: none;
+  }
+
+  .btn-login:hover{
+    background-color: #1c3a6f !important;
+    /* font-size: 1.1em; */
+  }
+
+
+  #txt{
+    margin-top: 30px !important;
+  }
+
+  .icon {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  .email-input {
+    position: relative;
+  }
+  
+  .email-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  
+  /* Adjust the positioning and size of the icon as needed */
+    

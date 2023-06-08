@@ -3,56 +3,48 @@ import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Signup.css";
 import { useSignupMutation } from "../services/appApi";
+import { RiEyeFill, RiEyeOffFill, RiMailLine } from "react-icons/ri";
+import Navigation from "../components/Navigation";
 
 function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
-  const [image, setImage] = useState(null); // Added state for image file
+  const [showPassword, setShowPassword] = useState(false);
+  const [image, setImage] = useState(null);
   const [signup, { error, isLoading, isError }] = useSignupMutation();
 
   function handleSignup(e) {
     e.preventDefault();
-    
-    const formData = new FormData(); // Create a new FormData instance
+
+    const formData = new FormData();
     formData.append("name", name);
     formData.append("email", email);
     formData.append("password", password);
-    formData.append("image", image); // Append the selected image file
+    formData.append("image", image);
 
-    signup(formData); // Pass the formData to the signup mutation
+    signup(formData);
   }
 
   function handleImageChange(e) {
-    setImage(e.target.files[0]); // Set the selected image file
+    setImage(e.target.files[0]);
   }
 
+  const handleTogglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
-    <Container
-      className="signup"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "80vh",
-        width: "4150px",
-        background: "#dde4e3",
-      }}
-    >
-      <Row
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "80vh",
-          width: "4150px",
-          background: "#dde4e3",
-        }}
-      >
-        <Col md={6} className="signup__form--container">
-          <fieldset>
-            <Form style={{ width: "100%" }} onSubmit={handleSignup}>
-              <h1>Create an account</h1>
+    <div>
+      <Navigation />
+      <Container className="signup">
+        <Row>
+          <Col md={6}>
+            <div className="signup__image"></div>
+          </Col>
+          <Col md={6} className="signup__form--container">
+            <Form onSubmit={handleSignup}>
+              <h1 style={{color:"#000"}}>Create an account</h1>
               {isError && <Alert variant="danger">{error.data}</Alert>}
               <Form.Group>
                 <Form.Label>Name</Form.Label>
@@ -67,24 +59,37 @@ function Signup() {
 
               <Form.Group>
                 <Form.Label>Email Address</Form.Label>
-                <Form.Control
-                  type="email"
-                  placeholder="Enter email"
-                  value={email}
-                  required
-                  onChange={(e) => setEmail(e.target.value)}
-                />
+                <div className="email-input">
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter email"
+                    value={email}
+                    required
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <span className="email-icon">
+                    <RiMailLine />
+                  </span>
+                </div>
               </Form.Group>
 
               <Form.Group className="mb-3">
                 <Form.Label>Password</Form.Label>
-                <Form.Control
-                  type="password"
-                  placeholder="Enter Password"
-                  value={password}
-                  required
-                  onChange={(e) => setPassword(e.target.value)}
-                />
+                <div className="password-input">
+                  <Form.Control
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Enter Password"
+                    value={password}
+                    required
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                  <span
+                    className="password-toggle-icon"
+                    onClick={handleTogglePasswordVisibility}
+                  >
+                    {showPassword ? <RiEyeOffFill /> : <RiEyeFill />}
+                  </span>
+                </div>
               </Form.Group>
 
               <Form.Group>
@@ -92,24 +97,24 @@ function Signup() {
                 <Form.Control
                   type="file"
                   accept="image/*"
-                  onChange={handleImageChange} // Handle image file selection
+                  onChange={handleImageChange}
                 />
-              </Form.Group><br />
+              </Form.Group>
 
               <Form.Group>
-                <Button type="submit" disabled={isLoading}>
+                <Button type="submit" disabled={isLoading} className="btn-signup">
                   Create account
                 </Button>
               </Form.Group>
-              <p className="pt-3 text-center">
-                If you have an account? <Link to="/login">Login</Link>{" "}
+
+              <p className="pt-3 text-center" id="txt">
+                Already have an account? <Link to="/login">Login</Link>{" "}
               </p>
             </Form>
-          </fieldset>
-        </Col>
-        {/* <Col md={6} className="signup__image--container"></Col> */}
-      </Row>
-    </Container>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }
 

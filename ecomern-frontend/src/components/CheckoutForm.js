@@ -98,7 +98,7 @@ function CheckoutForm() {
                 </Row>
                 <label htmlFor="card-element">Card</label>
                 <CardElement id="card-element" />
-                <Button className="mt-3" type="submit" disabled={user.cart.count <= 0 || paying || isSuccess}>
+                <Button  className="mt-3" type="submit" disabled={user.cart.count <= 0 || paying || isSuccess}>
                     {paying ? "Processing..." : "Pay"}
                 </Button>
             </Form>

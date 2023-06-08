@@ -25,6 +25,16 @@ function Home() {
             <div>
               <Navigation/>
             </div>
+          <div className="top">
+  <div className="hero">
+    <h1>EARTHY PAVING</h1>
+    <div className="hero-secondary"> We are Here To Make Your Deram paving best.</div>
+    <button className="btn-orderNow"><b>Order Now</b></button>
+  </div>  
+  <div className="placeholder"><img src="https://res.cloudinary.com/dy1pydfmg/image/upload/v1683623491/Pavestone_z0vrip.jpg" ></img>< div />
+  </div>
+</div>
+
 
             {/* <div id ="banner">
                 <div id = "banner-images">
