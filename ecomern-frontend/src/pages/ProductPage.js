@@ -70,14 +70,14 @@ function ProductPage() {
           <Navigation/>
         <Container className="pt-5 " style={{ position: "relative" }}>
           <Row className="Row">
-            <Col lg={6} className="pt-4" style={{marginTop:'58px'}}>
+            <Col lg={6} className="pt-4" style={{marginTop:'40px'}}>
               <AliceCarousel
                 mouseTracking
                 items={images}
                 controlsStrategy="alternate"
               />
             </Col>
-            <Col lg={6} className="pt-4" style={{marginTop:"50px"}}>
+            <Col lg={6} className="pt-4" style={{marginTop:"-25px", marginLeft:"-35px"}}>
               <h1>{product.name}</h1>
               <p>
                 <Badge bg="primary">{product.category}</Badge>

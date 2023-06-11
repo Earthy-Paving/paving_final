@@ -1,31 +1,33 @@
 import React from 'react';
 import './AboutUs.css';
 import Navigation from './Navigation';
+import ContactUs from './ContactUs';
 
 const AboutUs = () => {
   return (
     <div>
-      <Navigation/> <br/> <br/><br/><br/>
-      <div className="about-us-container">
+      <Navigation/> 
+            <div className="about-us-container">
         <div className="about-us-header">
           <h1>About Us</h1>
           <p style={{fontFamily:"sans-serif", fontSize:"25px"}}>Welcome to our website! We are a team of passionate individuals dedicated to providing high-quality products and excellent customer service.</p>
         </div>
 
         <div className="about-us-section">
-          <div className="about-us-image">
-            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686117739/our_-work-removebg-preview_g41vkj.png" alt="Teamwork" />
-          </div>
-          <div className="about-us-content">
+        <div className="about-us-content">
             <h2>Our Story</h2>
-            <p>Our journey began with a shared vision to create something extraordinary. We believe that by combining innovation, creativity, and hard work, we can make a difference in the world. From humble beginnings, we have grown into a strong team that is committed to delivering exceptional products.</p>
+            <p>Over the years, our dedication and passion have propelled us forward. We started as a small group of enthusiasts, driven by a common goal. With relentless determination, we overcame challenges and seized opportunities, steadily growing our company. Our commitment to excellence and customer satisfaction has been the foundation of our success. As word spread about our innovative products, more and more people joined us on this incredible journey.</p>
           </div>
+          <div className="about-us-image">
+            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686327680/our-story-new-removebg-preview_gdrbpa.png" alt="Teamwork" />
+          </div>
+          
         </div>
 
         <div className="about-us-section">
           <div className="about-us-content">
             <h2>Our Mission</h2>
-            <p>At our core, we are driven by a mission to inspire and empower people. We strive to develop products that enhance lives, foster creativity, and bring joy to our customers. Through continuous improvement and a relentless pursuit of excellence, we aim to make a positive impact in the lives of individuals around the globe.</p>
+            <p>At <b>Earthy Paving</b>, we believe that innovation is the key to transforming the world. We adopt a forward-thinking approach, combining cutting-edge technology with creative thinking to develop groundbreaking solutions. Our team of talented individuals, with diverse backgrounds and expertise, collaborates closely to explore new possibilities and push the boundaries of what's possible. By fostering a culture of collaboration, curiosity, and openness, we encourage the free flow of ideas and ensure that every voice is heard.</p>
           </div>
           <div className="about-us-image">
             <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686117739/our-mission-removebg-preview_psrymz.png" alt="Mission" />
@@ -33,16 +35,17 @@ const AboutUs = () => {
         </div>
 
         <div className="about-us-section">
+        <div className="about-us-content">
+            <h2>Our Values</h2>
+            <p>At [Company Name], our vision is to create a better future through innovation and technology. We envision a world where our products and services empower individuals and businesses to thrive, where barriers are broken, and new possibilities are realized. With a focus on sustainability and social responsibility, we aim to contribute to a more equitable and environmentally conscious society. Through our unwavering commitment to our vision, we strive to make a lasting impact on the world.</p>
+          </div>
           <div className="about-us-image">
             <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686118751/human-resources-vector-removebg-preview_iq0efb.png" alt="Values" />
           </div>
-          <div className="about-us-content">
-            <h2>Our Values</h2>
-            <p>We hold ourselves to the highest standards of integrity, quality, and innovation. Our team is united by a set of core values that guide us in everything we do. We believe in transparency, collaboration, and a customer-centric approach. These values are the foundation of our success and the driving force behind our commitment to excellence.</p>
-          </div>
+          
         </div>
 
-        <div className="about-us-section">
+        {/* <div className="about-us-section">
           <div className="about-us-content">
             <h2>Join Our Team</h2>
             <p>We are always looking for talented individuals who share our passion and values. If you are interested in joining our team, visit our Careers page to learn more about current opportunities.</p>
@@ -51,7 +54,7 @@ const AboutUs = () => {
           <div className="about-us-image">
             <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686118502/Hybrid-Meeting-Room-removebg-preview_a8ev4j.png" alt="Join Our Team" />
           </div>
-        </div>
+        </div> */}
 
         <div className="about-us-section">
           <div className="about-us-content">
@@ -94,10 +97,11 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-
-        {/* Add more sections as needed */}
+        <div>
+          <ContactUs />
+        </div>
+ </div>
       </div>
-    </div>
   );
 };
 

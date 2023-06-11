@@ -11,10 +11,10 @@
 
 .Row{
     background: rgb(250,248,248);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+box-shadow: 0 12px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 2px );
 -webkit-backdrop-filter: blur( 2px );
-border-radius: 10px;
+border-radius: 30px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 border-width: 30px;
 /* border: none; */
@@ -35,10 +35,10 @@ height: 50px !important;
 
 .pt-5{
     background: rgb(250,248,248);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+box-shadow: 0 0px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 2px );
 -webkit-backdrop-filter: blur( 2px );
-border-radius: 10px;
+border-radius: 30px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 border-width: 30px;
 margin-top: 120px;
@@ -46,10 +46,10 @@ margin-top: 120px;
 
 .my-4{
     background: rgb(250,248,248);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+box-shadow: 0 14px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 2px );
 -webkit-backdrop-filter: blur( 2px );
-border-radius: 10px;
+border-radius: 30px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 border-width: 30px;
 margin-top: 120px !important;

@@ -10,7 +10,7 @@ import { updateProducts } from "../features/productSlice";
 import ProductPreview from "../components/ProductPreview";
 import Navigation from "../components/Navigation";
 // import Carousel from "../components/carousel"
-
+import video from '../components/images/landing.mp4'
 function Home() {
     const dispatch = useDispatch();
     const products = useSelector((state) => state.products);
@@ -25,15 +25,19 @@ function Home() {
             <div>
               <Navigation/>
             </div>
-          <div className="top">
-  <div className="hero">
-    <h1>EARTHY PAVING</h1>
-    <div className="hero-secondary"> We are Here To Make Your Deram paving best.</div>
-    <button className="btn-orderNow"><b>Order Now</b></button>
-  </div>  
-  <div className="placeholder"><img src="https://res.cloudinary.com/dy1pydfmg/image/upload/v1683623491/Pavestone_z0vrip.jpg" ></img>< div />
-  </div>
-</div>
+            <div className="top" style={{marginTop:"90px"}}>
+            <div className="hero">
+                <h1>EARTHY PAVING</h1>
+                <div className="hero-secondary" style={{fontStyle:"inherit"}}>We are here to make your dream paving best. Join with us as our customer & Get More Discount. We are giving the best products and services. Earthy has a responsibility to your hope. To see our product.</div>
+                <button className="btn-orderNow"><b>Order Now</b></button>
+            </div>  
+            <div className="placeholder">
+                <video controls loop="true" autoplay="autoplay" muted style={{height:"380px", marginTop:"-40px", marginRight:"-150px"}}>
+                    <source src={video} type="video/mp4"/>
+                </video>
+            </div>
+            </div>
+
 
 
             {/* <div id ="banner">
@@ -48,18 +52,18 @@ function Home() {
             </div> */}
             
             
-            <div className="featured-products-container container mt-4"><br />
-                <h2 style={{"backgroundColor":"#fcf7f7"}}>Latest products</h2>
+            <div className="featured-products-container container mt-4">
+                <h2 style={{"backgroundColor":"#f3f3f3"}}>Latest products</h2>
                 {/* last products here */}
-                <div className="d-flex justify-content-center flex-wrap" style={{"backgroundColor":"#fbf7f7"}}>
+                <div className="d-flex justify-content-center flex-wrap" style={{"backgroundColor":"#f3f3f3"}}>
                     {latestProducts.map((product) => (
                         <ProductPreview {...product} />
                     ))}
                 </div>
                 <div><br /><br />
-                    <Link to="/category/all" style={{ "textAlign": "right", "display": "block", "textDecoration": "none", "backgroundColor":"#fcf7f7" }}>
-                        <button style={{"borderRadius":"15px", "marginRight":"577px", "background-color": "#152d51", "color":"white", "fontWeight":"bold", "fontSize":"1.6rem"}}>
-                        See more {">>"}
+                    <Link to="/category/all" style={{ "textAlign": "right", "display": "block", "textDecoration": "none", "backgroundColor":"#f3f3f3" }}>
+                        <button style={{"borderRadius":"15px", "background-color": "#152d51", "color":"white", "fontWeight":"bold", "fontSize":"1.6rem"}}>
+                        See more
                         </button>
                     </Link>
                 </div>

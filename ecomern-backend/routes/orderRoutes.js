@@ -7,10 +7,10 @@ const User = require('../models/User');
 
 router.post('/', async(req, res)=> {
   const io = req.app.get('socketio');
-  const {userId, cart, country, address} = req.body;
+  const {userId, orderId, cart, country, address} = req.body;
   try {
     const user = await User.findById(userId);
-    const order = await Order.create({owner: user._id, products: cart, country, address});
+    const order = await Order.create({orderId, owner: user._id, products: cart, country, address});
     order.count = cart.count;
     order.total = cart.total;
     await order.save();

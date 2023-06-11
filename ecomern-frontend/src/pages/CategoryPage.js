@@ -146,7 +146,7 @@ function CategoryPage() {
 
       <div
         className="filters-container d-flex justify-content-center pt-4 pb-4"
-        style={{ width: "19%", marginLeft: "40%", background: "white" }}
+        style={{ width: "19%", marginLeft: "67%", background: "white", marginTop:"20px" }}
       >
         <input
           type="search"
@@ -160,7 +160,7 @@ function CategoryPage() {
         {productsSearch.length === 0 ? (
           <h1>No products to show</h1>
         ) : (
-            <Container>
+            <Container className="Col">
             <Row>
               <Col md={{ span: 10, offset: 1 }}>
                 <Pagination

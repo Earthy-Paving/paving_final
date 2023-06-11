@@ -1,13 +1,13 @@
 import axios from "../axios";
 import React, { useRef, useState } from "react";
-import { Navbar, Button, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 import { FaUser } from 'react-icons/fa';
 import { logout, resetNotifications } from "../features/userSlice";
 import "./Navigation.css";
 
-function Navigation() {
+function Navigation({ userImage }) {
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const bellRef = useRef(null);
@@ -52,16 +52,16 @@ function Navigation() {
             <Nav.Link>Products</Nav.Link>
           </LinkContainer> */}
           <NavDropdown title="Products" id="productDropdown">
-   <LinkContainer to="/category/all">
-     <NavDropdown.Item>All Products</NavDropdown.Item>
-   </LinkContainer>
-   <LinkContainer to="/category/stones">
-     <NavDropdown.Item>Stones</NavDropdown.Item>
-   </LinkContainer>
-   <LinkContainer to="/category/grasses">
-     <NavDropdown.Item>Grasses</NavDropdown.Item>
-   </LinkContainer>
- </NavDropdown>
+            <LinkContainer to="/category/all">
+              <NavDropdown.Item>All Products</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to="/category/stones">
+              <NavDropdown.Item>Stones</NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to="/category/grasses">
+              <NavDropdown.Item>Grasses</NavDropdown.Item>
+            </LinkContainer>
+          </NavDropdown>
         </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -90,14 +90,14 @@ function Navigation() {
                   onClick={handleToggleNotifications}
                 >
                   <div className="navlinknav-icon">
-                    <i style={{color:"#BA9364"}}
+                    <i style={{ color: "#BA9364" }}
                       className="fas fa-bell"
                       ref={bellRef}
                       data-count={unreadNotifications || null}
                     ></i>
                   </div>
                 </Nav.Link>
-                <NavDropdown title={<FaUser style={{color:'#BA9364'}}/>} id="basic-nav-dropdown">
+                <NavDropdown title={<FaUser style={{ color: '#BA9364' }} />} id="basic-nav-dropdown">
                   {user.isAdmin && (
                     <>
                       <LinkContainer to="/admin">
@@ -109,10 +109,22 @@ function Navigation() {
                       <NavDropdown.Divider />
                     </>
                   )}
-                  <NavDropdown.Item onClick={handleLogout} style={{backgroundColor:"red"}}>
+                  {user && !user.isAdmin && (
+                    <LinkContainer to="/orders" className="order">
+                      <Nav.Link>My Orders </Nav.Link>
+                    </LinkContainer>
+                  )}
+                  <NavDropdown.Item onClick={handleLogout} style={{ backgroundColor: "red" }}>
                     Logout
                   </NavDropdown.Item>
                 </NavDropdown>
+                {userImage && (
+                  <img
+                    src={userImage}
+                    alt="User"
+                    className="user-image"
+                  />
+                )}
               </>
             )}
           </Nav>
@@ -123,7 +135,7 @@ function Navigation() {
         className="notifications-container"
         ref={notificationRef}
         style={{
-          "background-color": "#152d51",
+          backgroundColor: "#152d51",
           position: "absolute",
           top: bellPos.top + 60,
           left: bellPos.right,
@@ -144,7 +156,7 @@ function Navigation() {
             </p>
           ))
         ) : (
-          <p>No notifcations yet</p>
+          <p>No notifications yet</p>
         )}
       </div>
     </Navbar>

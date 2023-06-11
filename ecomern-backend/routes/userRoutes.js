@@ -1,22 +1,19 @@
 const router = require('express').Router();
-const multer = require('multer');
 const User = require('../models/User');
-const upload = multer({ dest: 'uploads/' }); // Set the destination folder for uploaded images
+const Order = require('../models/Order');
+// signup
 
-//signup
-
-router.post('/signup', upload.single('image'), async (req, res) => {
-  const { name, email, password } = req.body;
-  const image = req.file; // Access the uploaded image file
+router.post('/signup', async(req, res)=> {
+  const {name, email, password} = req.body;
 
   try {
-    const user = await User.create({ name, email, password, image: image.filename });
+    const user = await User.create({name, email, password});
     res.json(user);
   } catch (e) {
-    if (e.code === 11000) return res.status(400).send('Email already exists');
-    res.status(400).send(e.message);
+    if(e.code === 11000) return res.status(400).send('Email already exists');
+    res.status(400).send(e.message)
   }
-});
+})
 
 // login
 

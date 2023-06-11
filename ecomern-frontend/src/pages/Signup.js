@@ -11,23 +11,12 @@ function Signup() {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [image, setImage] = useState(null);
   const [signup, { error, isLoading, isError }] = useSignupMutation();
 
   function handleSignup(e) {
     e.preventDefault();
 
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("password", password);
-    formData.append("image", image);
-
-    signup(formData);
-  }
-
-  function handleImageChange(e) {
-    setImage(e.target.files[0]);
+    signup({ name, email, password });
   }
 
   const handleTogglePasswordVisibility = () => {
@@ -90,15 +79,6 @@ function Signup() {
                     {showPassword ? <RiEyeOffFill /> : <RiEyeFill />}
                   </span>
                 </div>
-              </Form.Group>
-
-              <Form.Group>
-                <Form.Label>Profile Image</Form.Label>
-                <Form.Control
-                  type="file"
-                  accept="image/*"
-                  onChange={handleImageChange}
-                />
               </Form.Group>
 
               <Form.Group>

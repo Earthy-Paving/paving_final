@@ -55,10 +55,11 @@ function OrdersAdminPage() {
         return <h1 className="text-center pt-4">No orders yet</h1>;
     }
 
-    function TableRow({ _id, count, owner, total, status, products, address }) {
+    function TableRow({ _id, orderId, count, owner, total, status, products, address }) {
         return (
             <tr>
-                <td>{_id}</td>
+                {/* <td>{_id}</td> */}
+                <td>{orderId}</td>
                 <td>{owner?.name}</td>
                 <td>{count}</td>
                 <td>{total}</td>
@@ -74,7 +75,7 @@ function OrdersAdminPage() {
                 </td>
                 <td>
                     <span style={{ cursor: "pointer" }} onClick={() => showOrder(products)}>
-                        View order <i className="fa fa-eye"></i>
+                        <i className="fa fa-eye"></i>
                     </span>
                 </td>
             </tr>

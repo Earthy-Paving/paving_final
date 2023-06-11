@@ -3,6 +3,7 @@
   margin: 0;
   height: 70px;
   width: 200px !important;
+  margin-left: -60px;
 }
 .home-banner {
   height: 100%;
@@ -143,4 +144,9 @@
 
 #productDropdown:hover{
   color: white;
+}
+
+.order:hover{
+  background-color: #1C2739;
+  color: #fff !important;
 }

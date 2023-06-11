@@ -190,7 +190,7 @@ function NewProduct() {
       <Row>
         <Col md={6} className="new-product__form--container" style={{ marginLeft: "340px" }}>
           <Form style={{ width: "100%" }} onSubmit={handleSubmit}>
-            <h1 className="mt-4">Create a product</h1>
+            <h1 style={{color:"#000"}} className="mt-4">Create a product</h1>
             {isSuccess && <Alert variant="success">Product created with success</Alert>}
             {isError && <Alert variant="danger">{error.data}</Alert>}
             <Form.Group className="mb-3">
@@ -226,8 +226,8 @@ function NewProduct() {
               <Form.Control type="text" placeholder="Custom ID" value={customId} required onChange={(e) => setCustomId(e.target.value)} />
             </Form.Group>
 
-            <Form.Group className="mb-3">
-              <Button type="button" onClick={showWidget}>
+            <Form.Group className="mb-4">
+              <Button className="but" type="button" onClick={showWidget}>
                 Upload Images
               </Button>
               <div className="images-preview-container">
@@ -240,8 +240,8 @@ function NewProduct() {
               </div>
             </Form.Group>
 
-            <Form.Group>
-              <Button type="submit" disabled={isLoading || isSuccess}>
+            <Form.Group className="mb-4">
+              <Button className="but"  type="submit" disabled={isLoading || isSuccess}>
                 Create Product
               </Button>
             </Form.Group>

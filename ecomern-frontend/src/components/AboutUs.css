@@ -1,11 +1,15 @@
 .about-us-container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 50px;
   background-color: #f3f3f3;
   border-radius: 30px;
   box-shadow: 0 2px 10px rgba(38, 34, 34, 0.996);
-  margin-top: 30px;
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-us-header {
@@ -21,18 +25,16 @@
 
 .about-us-section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 80px;
 }
 
 .about-us-image img {
-  width: 350px;
+  width: 100%;
   max-width: 400px;
   height: auto;
   border-radius: 10px;
-  /* box-shadow: 0 2px 10px rgb(234, 10, 10); */
 }
 
 .about-us-content h2 {
@@ -67,31 +69,72 @@
 .team-members {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-member {
-  width: 300px;
-  margin-bottom: 30px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
 }
 
 .team-member-avatar {
   width: 150px;
   height: 150px;
-  object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  transform: scaleX(-1); /* Flip the image horizontally */
+}
+
+.team-member-info {
+  margin-top: 10px;
+  text-align: center;
 }
 
 .team-member-name {
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 18px;
   color: #333333;
 }
 
 .team-member-role {
   font-size: 16px;
   color: #555555;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .about-us-container {
+    padding: 30px;
+  }
+
+  .about-us-section {
+    margin-bottom: 60px;
+  }
+
+  .about-us-image img {
+    max-width: 300px;
+  }
+
+  .about-us-content h2 {
+    font-size: 20px;
+  }
+
+  .about-us-content p {
+    font-size: 16px;
+  }
+
+  .team-member-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-member-name {
+    font-size: 16px;
+  }
+
+  .team-member-role {
+    font-size: 14px;
+  }
 }
