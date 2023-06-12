@@ -90,7 +90,7 @@ function DashboardProducts() {
         <td>{name}</td>
         <td>{price}</td>
         <td>
-          <Link to={`/product/${_id}/edit`} className="btnn btn-warning">
+          <Link to={`/product/${_id}/edit`} className="Color btn-warning">
             Edit
           </Link>
           <br />

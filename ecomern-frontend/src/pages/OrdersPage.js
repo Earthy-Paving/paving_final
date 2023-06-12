@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import axios from "../axios";
 import Loading from "../components/Loading";
 import "./OrdersPage.css";
+import Navigation from "../components/Navigation";
 
 function OrdersPage() {
     const user = useSelector((state) => state.user);
@@ -33,9 +34,11 @@ function OrdersPage() {
     }
 
     return (
+        <div>
+          <Navigation/>
         <Container className="orders">
             <div className="orderpage">
-            <h1 className="text-center" style={{"marginRight":"395px"}}>Your orders</h1>
+            <h1 className="text-center">Your orders</h1>
             <Table responsive striped bordered hover>
                 <thead>
                     <tr>
@@ -56,13 +59,14 @@ function OrdersPage() {
                             </td>
                             <td>{order.date}</td>
 
-                            <td>${order.total}</td>
+                            <td>Rs{order.total}</td>
                         </tr>
                     ))}
                 </tbody>
             </Table>
             </div>
         </Container>
+        </div>
     );
 }
 

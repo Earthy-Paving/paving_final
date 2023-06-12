@@ -201,7 +201,7 @@ function EditProductPage() {
     updateProduct({ id, name, description, price, category, images }).then(({ data }) => {
       if (data.length > 0) {
         setTimeout(() => {
-          navigate("/");
+          navigate("/admin");
         }, 1500);
       }
     });
@@ -280,7 +280,7 @@ function EditProductPage() {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Button type="button" onClick={showWidget}>
+              <Button className="button" type="button" onClick={showWidget}>
                 Upload Images
               </Button>
               <div className="images-preview-container">
@@ -296,7 +296,7 @@ function EditProductPage() {
             </Form.Group>
 
             <Form.Group>
-              <Button type="submit" disabled={isLoading || isSuccess}>
+              <Button className="button" type="submit" disabled={isLoading || isSuccess}>
                 Update Product
               </Button>
             </Form.Group>

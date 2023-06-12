@@ -9,3 +9,14 @@ background-color: #fbf7f7;
 padding: 100px;
 margin-top: 130px;
 }
+
+.sathuu.active,
+.sathuu:focus{
+    background-color: #152B51 !important;
+    color: #fff !important;
+}
+
+.sathuu{
+    color: #BA9364;
+}
+

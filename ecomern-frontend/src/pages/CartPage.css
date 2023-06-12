@@ -34,11 +34,11 @@
   } */
 
   .cart-container{
-    background: rgba( 245, 240, 240, 0.45 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: #f3f3f3;
+box-shadow: 0 2px 2px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 2px );
 -webkit-backdrop-filter: blur( 2px );
-border-radius: 10px;
+border-radius: 30px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 padding: 100px;
 margin-top: 130px;

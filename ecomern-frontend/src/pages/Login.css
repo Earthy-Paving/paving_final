@@ -1,82 +1,73 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcf7f7;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 50px;
+  margin-top: 130px !important;
+}
 
-.login{
-    /* background: rgba( 255, 255, 255, 0 ); */
-    background-image: url("https://res.cloudinary.com/dy1pydfmg/image/upload/v1685290966/5_enogov.png") !important;
-    background-repeat: no-repeat !important;
-    background-size: cover!important;
+.login__image {
+  background-image: url("https://res.cloudinary.com/dejwpag1r/image/upload/v1685641241/5_i71dlz.png");
+  height: 500px;
+  width: 600px;
+  background-size: cover;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.login__form--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background: #dde4e3;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: -9px;
+}
+
+@media screen and (max-width: 756px) {
+  .login__image {
+    display: none;
+  }
+}
+
+.log{
+  background: #fcf7f7;
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 5px );
-/* -webkit-backdrop-filter: blur( 0px ); */
-border-radius: 20px;
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 30px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-padding: 350px;
-margin-top: 100px;
-margin-bottom: -25px;
+padding: 50px;
+margin-top: 130px !important;
 }
 
-
-
-.login__form--container{
-    /* background: rgba( 255, 255, 255, 0.5 ); */
- box-shadow: 0 8px 12px 0 rgba(220, 220, 220, 0.37);
-backdrop-filter: blur( 10px );
--webkit-backdrop-filter: blur( 20px );
-border-radius: 10px;
-/* border: 2px solid white; */
-
-padding: 35px;
-height: 500px;
+.btn-login{
+  background-color: #152B51 !important;
+  color: #BA9364 !important;
+  width: 100%;
 }
 
-.pt-3 {
-    color: black !important;
+.btn-login:hover{
+  color: #fff !important;
 }
 
+.email-input,
 .password-input {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .password-toggle-icon {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-  .btn-login{
-    background-color: #152b51 !important;
-    width: 100%;
-    margin-top: 18px;
-    border: none;
-  }
+  display: flex;
+  align-items: center;
+}
 
-  .btn-login:hover{
-    background-color: #1c3a6f !important;
-    /* font-size: 1.1em; */
-  }
-
-
-  #txt{
-    margin-top: 30px !important;
-  }
-
-  .icon {
-    vertical-align: middle;
-    margin-right: 5px;
-  }
-  .email-input {
-    position: relative;
-  }
-  
-  .email-icon {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-  }
-  
-  /* Adjust the positioning and size of the icon as needed */
-    
+.email-icon,
+.password-toggle-icon {
+  margin-left: -25px; /* Adjust this value to control the spacing between the input field and the icon */
+  cursor: pointer;
+}

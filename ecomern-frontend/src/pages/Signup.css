@@ -35,3 +35,13 @@ margin-top: 130px !important;
     }
   }
   
+  .btn-signup{
+    background-color: #152B51 !important;
+    color: #BA9364 !important;
+    width: 100%;
+  }
+  
+  .btn-signup:hover{
+    color: #fff !important;
+  }
+  

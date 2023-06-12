@@ -25,14 +25,14 @@ function Home() {
             <div>
               <Navigation/>
             </div>
-            <div className="top" style={{marginTop:"90px"}}>
+            <div className="top" style={{marginTop:"0px"}}>
             <div className="hero">
-                <h1>EARTHY PAVING</h1>
-                <div className="hero-secondary" style={{fontStyle:"inherit"}}>We are here to make your dream paving best. Join with us as our customer & Get More Discount. We are giving the best products and services. Earthy has a responsibility to your hope. To see our product.</div>
+                <h1 style={{color:"#fff"}}>EARTHY PAVING</h1>
+                <div className="hero-secondary">We are here to make your dream paving best. Join with us as our customer & Get More Discount. We are giving the best products and services. Earthy has a responsibility to your hope. To see our product.</div>
                 <button className="btn-orderNow"><b>Order Now</b></button>
             </div>  
-            <div className="placeholder">
-                <video controls loop="true" autoplay="autoplay" muted style={{height:"380px", marginTop:"-40px", marginRight:"-150px"}}>
+            <div className="video">
+                <video controls loop="true" autoplay="autoplay" muted style={{height:"380px", marginTop:"-230px", marginRight:"-190px"}}>
                     <source src={video} type="video/mp4"/>
                 </video>
             </div>
@@ -62,7 +62,7 @@ function Home() {
                 </div>
                 <div><br /><br />
                     <Link to="/category/all" style={{ "textAlign": "right", "display": "block", "textDecoration": "none", "backgroundColor":"#f3f3f3" }}>
-                        <button style={{"borderRadius":"15px", "background-color": "#152d51", "color":"white", "fontWeight":"bold", "fontSize":"1.6rem"}}>
+                        <button className="see" style={{"borderRadius":"15px", "background-color": "#152d51", "fontWeight":"bold", "fontSize":"1.3rem", "color":"#BA9364"}}>
                         See more
                         </button>
                     </Link>
@@ -73,7 +73,7 @@ function Home() {
                 {/* <img src="https://res.cloudinary.com/learn-code-10/image/upload/v1654093280/xkia6f13xxlk5xvvb5ed.png" /> */}
             </div>
             <div className="recent-products-container container mt-4">
-                <h2 style={{"backgroundColor":"#f5eaf3", "textDecoration":"underline"}}>Categories</h2>
+                <h2 style={{"backgroundColor":"#f3f3f3", "textDecoration":"underline"}}>Categories</h2>
                 <Row >
                     {categories.map((category) => (
                         <LinkContainer to={`/category/${category.name.toLocaleLowerCase()}`}>

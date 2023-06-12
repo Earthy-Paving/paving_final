@@ -162,7 +162,7 @@ function NewProduct() {
       .then(({ data }) => {
         if (data.length > 0) {
           setTimeout(() => {
-            navigate("/");
+            navigate("/admin");
           }, 1500);
         }
       });
@@ -185,7 +185,7 @@ function NewProduct() {
 
   return (
     <p>
-      <Navigation/><br/><br/><br/>
+      <Navigation/>
     <Container className="product">
       <Row>
         <Col md={6} className="new-product__form--container" style={{ marginLeft: "340px" }}>

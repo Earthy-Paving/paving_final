@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import axios from "../axios";
 import Loading from "./Loading";
 import Pagination from "./Pagination";
+import "./OrdersAdminPage.css"
 
 function OrdersAdminPage() {
     const [orders, setOrders] = useState([]);
@@ -66,11 +67,11 @@ function OrdersAdminPage() {
                 <td>{address}</td>
                 <td>
                     {status === "processing" ? (
-                        <Button size="sm" onClick={() => markShipped(_id, owner?._id)}>
-                            Mark as shipped
+                        <Button size="sm" onClick={() => markShipped(_id, owner?._id)} id="mark">
+                            Mark
                         </Button>
                     ) : (
-                        <Badge bg="success">Shipped</Badge>
+                        <Badge id="shipped">Shipped</Badge>
                     )}
                 </td>
                 <td>

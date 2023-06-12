@@ -11,7 +11,7 @@ function ProductPreview({ _id, category, name, pictures }) {
                 <Card.Img variant="top" className="product-preview-img" src={pictures[0].url} style={{ height: "15rem", width: "16rem", objectFit: "cover" }} />
                 <Card.Body>
                     <Card.Title className="title">{name}</Card.Title>
-                    <Badge className="badge">
+                    <Badge className="badge" style={{color:"#BA9364"}}>
                         {category}
                     </Badge>
                 </Card.Body>

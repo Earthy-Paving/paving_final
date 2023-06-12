@@ -10,13 +10,24 @@
     margin-bottom: 20px !important;
     border: none;
 }
-.btnn{
-    background-color: btn-warning;
-    color: #fff;
-    font-size: 25px;
-    padding: 7px;
-    /* border: none; */
-    border-color: #000 !important;
-    text-decoration: none !important;
-    border-radius: 10px;
+.Color{
+
+        background-color: btn-warning;
+        color: #fff;
+        font-size: 18px;
+        padding: 12px 30px;
+        /* border: none; */
+        border-color: #000 !important;
+        text-decoration: none !important;
+        border-radius: 5px;
+    /* margin-bottom: 20px !important; */
+}
+
+.deleteNotChange{
+    color: #BA9364 !important;
+    /* margin-top: 10px !important; */
+}
+
+.deleteNotChange:hover{
+    color: #fff !important;
 }

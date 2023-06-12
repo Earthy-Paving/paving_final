@@ -3,7 +3,7 @@ import { Container, Nav, Tab, Col, Row } from "react-bootstrap";
 import ClientsAdminPage from "../components/ClientsAdminPage";
 import DashboardProducts from "../components/DashboardProducts";
 import OrdersAdminPage from "../components/OrdersAdminPage";
-import Reviews from "../components/Reviews";
+// import Reviews from "../components/Reviews";
 import "./AdminDashboard.css"
 import Navigation from "../components/Navigation";
 
@@ -18,17 +18,17 @@ function AdminDashboard() {
                     <Col sm={3}>
                         <Nav variant="pills" className="flex-column">
                             <Nav.Item>
-                                <Nav.Link eventKey="products" style={{cursor:"pointer"}}>Products</Nav.Link>
+                                <Nav.Link className="sathuu" eventKey="products" style={{cursor:"pointer"}}>Products</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="orders" style={{cursor:"pointer"}}>Orders</Nav.Link>
+                                <Nav.Link className="sathuu" eventKey="orders" style={{cursor:"pointer"}}>Orders</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="clients" style={{cursor:"pointer"}}>Clients</Nav.Link>
+                                <Nav.Link className="sathuu" eventKey="clients" style={{cursor:"pointer"}}>Clients</Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="reviews" style={{cursor:"pointer"}}>Reviews</Nav.Link>
-                            </Nav.Item>
+                            {/* <Nav.Item>
+                                <Nav.Link className="sathuu" eventKey="reviews" style={{cursor:"pointer"}}>Reviews</Nav.Link>
+                            </Nav.Item> */}
 
                         </Nav>
                     </Col>
@@ -44,7 +44,7 @@ function AdminDashboard() {
                                 <ClientsAdminPage />
                             </Tab.Pane>
                             <Tab.Pane eventKey="reviews">
-  <Reviews />
+  {/* <Reviews /> */}
 </Tab.Pane>
 
                             

@@ -9,6 +9,8 @@ import CheckoutForm from "../components/CheckoutForm";
 import "./Checkout.css";
 import Navigation from "../components/Navigation";
 // import { Button, Col, Container, Form, Row, Alert } from "react-bootstrap";
+import ContactUs from "../components/ContactUs";
+
 
 const stripePromise = loadStripe("pk_test_51N5lmvDBrkoq40ZPf79HKKIdeGhP2d2jgYW2K6W4RyF2GpxmgwP19r6cXAEJ85AVhqPqoIllCzixzzPt75pwvKCx003YiYCpGH");
 
@@ -38,7 +40,7 @@ function Checkout () {
         <Container style={{ minHeight: "95vh" }} className="cart-container">
             <Row>
             <Col>
-                    <h1 className="pt-2 h3">Shopping cart</h1>
+                    <h1 className="pt-2 h3">Checkout Form</h1>
                     {cart.length == 0 ? (
                         <Alert variant="info">Thank You For Your Order. We Welcome You Visit Again</Alert>
                     ) : (
@@ -46,6 +48,9 @@ function Checkout () {
                             <CheckoutForm />
                         </Elements>
                     )}
+                    <div>
+                <ContactUs/>
+            </div>
                 </Col> 
             </Row>
         </Container>

@@ -37,7 +37,7 @@ const AboutUs = () => {
         <div className="about-us-section">
         <div className="about-us-content">
             <h2>Our Values</h2>
-            <p>At [Company Name], our vision is to create a better future through innovation and technology. We envision a world where our products and services empower individuals and businesses to thrive, where barriers are broken, and new possibilities are realized. With a focus on sustainability and social responsibility, we aim to contribute to a more equitable and environmentally conscious society. Through our unwavering commitment to our vision, we strive to make a lasting impact on the world.</p>
+            <p>At <b>Earthy Paving</b>, our vision is to create a better future through innovation and technology. We envision a world where our products and services empower individuals and businesses to thrive, where barriers are broken, and new possibilities are realized. With a focus on sustainability and social responsibility, we aim to contribute to a more equitable and environmentally conscious society. Through our unwavering commitment to our vision, we strive to make a lasting impact on the world.</p>
           </div>
           <div className="about-us-image">
             <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686118751/human-resources-vector-removebg-preview_iq0efb.png" alt="Values" />

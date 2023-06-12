@@ -1,29 +1,28 @@
 import axios from "../axios";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 import { FaUser } from 'react-icons/fa';
 import { logout, resetNotifications } from "../features/userSlice";
 import "./Navigation.css";
-
 function Navigation({ userImage }) {
   const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const bellRef = useRef(null);
   const notificationRef = useRef(null);
   const [bellPos, setBellPos] = useState({});
-
+  const [showNotifications, setShowNotifications] = useState(false);
   function handleLogout() {
     dispatch(logout());
   }
-  
   const unreadNotifications = user?.notifications?.reduce((acc, current) => {
     if (current.status === "unread") return acc + 1;
     return acc;
   }, 0);
-
   function handleToggleNotifications() {
+    setShowNotifications((prevShowNotifications) => !prevShowNotifications);
+    dispatch(resetNotifications());
     const position = bellRef.current.getBoundingClientRect();
     setBellPos(position);
     notificationRef.current.style.display =
@@ -32,7 +31,21 @@ function Navigation({ userImage }) {
     if (unreadNotifications > 0)
       axios.post(`/users/${user._id}/updateNotifications`);
   }
-
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        notificationRef.current &&
+        !notificationRef.current.contains(event.target) &&
+        !bellRef.current.contains(event.target)
+      ) {
+        setShowNotifications(false);
+      }
+    }
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
   return (
     <Navbar expand="lg" className="navibar">
       <Container className="contain">
@@ -135,11 +148,11 @@ function Navigation({ userImage }) {
         className="notifications-container"
         ref={notificationRef}
         style={{
-          backgroundColor: "#152d51",
+          backgroundColor: "#152D51",
           position: "absolute",
           top: bellPos.top + 60,
           left: bellPos.right,
-          display: "none",
+          display: showNotifications ? "block" : "none",
           zIndex: 100,
         }}
       >
@@ -162,5 +175,4 @@ function Navigation({ userImage }) {
     </Navbar>
   );
 }
-
 export default Navigation;

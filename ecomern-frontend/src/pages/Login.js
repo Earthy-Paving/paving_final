@@ -24,28 +24,8 @@ function Login() {
   return (
     <div>
       <Navigation/>
-      <Container
-        className="login"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "80vh",
-          width: "4150px",
-          background: "#dde4e3",
-          
-        }}
-      >
-        <Row
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "80vh",
-            width: "4150px",
-            // background: "#dde4e3",
-          }}
-        >
+      <Container className="log">
+        <Row>
           <Col md={6} className="login__form--container">
             <fieldset>
               <Form style={{ width: "100%" }} onSubmit={handleLogin}>
@@ -99,7 +79,9 @@ function Login() {
               </Form>
             </fieldset>
           </Col>
-          {/* <Col md={6} className="login__image--container"></Col> */}
+          <Col md={6} className="login__image--container">
+            <div className="login__image"></div>
+          </Col>
         </Row>
       </Container>
     </div>
