@@ -9,7 +9,7 @@ import CheckoutForm from "../components/CheckoutForm";
 import "./Checkout.css";
 import Navigation from "../components/Navigation";
 // import { Button, Col, Container, Form, Row, Alert } from "react-bootstrap";
-import ContactUs from "../components/ContactUs";
+import CartDetails from "../components/CartDetails";
 
 
 const stripePromise = loadStripe("pk_test_51N5lmvDBrkoq40ZPf79HKKIdeGhP2d2jgYW2K6W4RyF2GpxmgwP19r6cXAEJ85AVhqPqoIllCzixzzPt75pwvKCx003YiYCpGH");
@@ -37,20 +37,24 @@ function Checkout () {
     return (
         <p>
             <Navigation/>
-        <Container style={{ minHeight: "95vh" }} className="cart-container">
+        <Container className="Check" style={{ minHeight: "95vh", marginTop:"150px"}}>
             <Row>
             <Col>
-                    <h1 className="pt-2 h3">Checkout Form</h1>
-                    {cart.length == 0 ? (
-                        <Alert variant="info">Thank You For Your Order. We Welcome You Visit Again</Alert>
+                    {cart.length === 0 ? (
+                        <p>
+                            <span style={{fontSize:'40px', textAlign:'center'}}>Thank You For Your Order. We Will Contact Within A Day.</span>
+                            <div style={{textAlign:'center', paddingLeft:'100px'}}>
+                              <CartDetails/>
+                            </div>
+            </p>
                     ) : (
                         <Elements stripe={stripePromise}>
                             <CheckoutForm />
                         </Elements>
                     )}
-                    <div>
+                    {/* <div>
                 <ContactUs/>
-            </div>
+            </div> */}
                 </Col> 
             </Row>
         </Container>

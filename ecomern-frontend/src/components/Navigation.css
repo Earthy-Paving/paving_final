@@ -17,6 +17,7 @@
 }
 .navlink-link {
   color: #BA9364 !important;
+  /* margin-left: 15% !important; */
 }
 .navlink-link:hover {
   text-decoration: none;
@@ -53,8 +54,8 @@
 #cartcount {
   font-size: 10px;
   position: relative;
-  top: -15px;
-  left: -5px;
+  top: -35px;
+  left: 20px;
   padding: 1px 3px;
 }
 .dropdown-menu {
@@ -150,4 +151,8 @@
 .order:hover{
   background-color: #1C2739;
   color: #fff !important;
+}
+
+.fas{
+  margin-left: 50% !important;
 }

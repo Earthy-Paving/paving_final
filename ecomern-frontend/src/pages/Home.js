@@ -29,7 +29,9 @@ function Home() {
             <div className="hero">
                 <h1 style={{color:"#fff"}}>EARTHY PAVING</h1>
                 <div className="hero-secondary">We are here to make your dream paving best. Join with us as our customer & Get More Discount. We are giving the best products and services. Earthy has a responsibility to your hope. To see our product.</div>
+                <LinkContainer to="/category/all">
                 <button className="btn-orderNow"><b>Order Now</b></button>
+                </LinkContainer>
             </div>  
             <div className="video">
                 <video controls loop="true" autoplay="autoplay" muted style={{height:"380px", marginTop:"-230px", marginRight:"-190px"}}>

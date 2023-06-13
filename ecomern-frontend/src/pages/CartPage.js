@@ -33,7 +33,14 @@ function CartPage() {
             <Navigation/>
         <Container style={{ minHeight: "50vh" }} className="cart-container">
              {cart.length === 0 ? (
-                <Alert className="alert" variant="info">Shopping cart is empty. Add products to your cart</Alert>
+                <div style={{paddingLeft:"450px"}}>
+                <div class="book">
+        <p style={{padding:"40px"}}>Shopping cart is empty. Add products to your cart</p>
+        <div class="cover" >
+            <p>Shopping Status</p>
+        </div>
+       </div>
+       </div>    
             ) : (
                 <>  
                     <Col md={12} className="col">

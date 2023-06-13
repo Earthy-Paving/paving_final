@@ -85,7 +85,7 @@ function Navigation({ userImage }) {
               </LinkContainer>
             )}
             {user && !user.isAdmin && (
-              <LinkContainer to="/cart" className="navlink-link">
+              <LinkContainer to="/cart" className="navlink-link" style={{marginLeft:"15%", marginBottom:"-25px"}}>
                 <Nav.Link>
                   <i className="fas fa-shopping-cart"></i>
                   {user?.cart.count > 0 && (

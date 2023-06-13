@@ -53,7 +53,8 @@ function CheckoutForm() {
     return (
         <Col className="cart-payment-container">
             <Form onSubmit={handlePay}>
-                <Row>
+                <h1>Checkout Form</h1>
+                <Row style={{marginTop:"10px"}}>
                     {alertMessage && <Alert>{alertMessage}</Alert>}
                     <Col md={6}>
                         <Form.Group className="mb-3">
@@ -67,8 +68,6 @@ function CheckoutForm() {
                             <Form.Control type="text" placeholder="Email" value={user.email} disabled />
                         </Form.Group>
                     </Col>
-                </Row>
-                <Row>
                     <Col md={6}>
                         <Form.Group className="mb-3">
                             <Form.Label>Address</Form.Label>
@@ -81,8 +80,6 @@ function CheckoutForm() {
                             <Form.Control type="text" placeholder="City" value={city} onChange={(e) => setCity(e.target.value)} required />
                         </Form.Group>
                     </Col>
-                </Row>
-                <Row>
                     <Col md={6}>
                         <Form.Group className="mb-3">
                             <Form.Label>District</Form.Label>
