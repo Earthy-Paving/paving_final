@@ -29,14 +29,15 @@ function CartPage() {
     }
 
     return (
-        <p>
+        <>
+        
             <Navigation/>
         <Container style={{ minHeight: "50vh" }} className="cart-container">
              {cart.length === 0 ? (
                 <div style={{paddingLeft:"450px"}}>
                 <div class="book">
-        <p style={{padding:"40px"}}>Shopping cart is empty. Add products to your cart</p>
-        <div class="cover" >
+        <p style={{padding:"40px", fontSize:"20px", fontWeight:"bolder"}}>Shopping cart is empty. Add products to your cart</p>
+        <div class="cover" style={{ fontSize:"20px", fontWeight:"bolder" }}>
             <p>Shopping Status</p>
         </div>
        </div>
@@ -87,7 +88,8 @@ function CartPage() {
                 )}
             {/* </Row> */}
         </Container>
-        </p>
+        </>
+        
     );
 }
 

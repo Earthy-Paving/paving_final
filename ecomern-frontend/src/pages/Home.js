@@ -27,8 +27,15 @@ function Home() {
             </div>
             <div className="top" style={{marginTop:"0px"}}>
             <div className="hero">
-                <h1 style={{color:"#fff"}}>EARTHY PAVING</h1>
-                <div className="hero-secondary">We are here to make your dream paving best. Join with us as our customer & Get More Discount. We are giving the best products and services. Earthy has a responsibility to your hope. To see our product.</div>
+                {/* <h1 style={{color:"#fff"}}>EARTHY PAVING</h1> */}
+                <div className="hero-secondary">
+                    <p>WE MAKE YOUR DREAM PAVING BEST.</p>
+<p>Your Satisfaction is our responsibility </p>
+                     <p>For best Paving services. </p>
+                   <p>Contact EARTHY PAVING</p> 
+                     To see our product.
+                     
+                     </div>
                 <LinkContainer to="/category/all">
                 <button className="btn-orderNow"><b>Order Now</b></button>
                 </LinkContainer>

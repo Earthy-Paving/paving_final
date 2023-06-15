@@ -40,12 +40,12 @@ function Footer() {
   <section className="footer">
     <div className="container text-center text-md-start mt-5 " style={{paddingTop:"15px"}}>
       {/* Grid row */}
-      <div className="row mt-3">
+      <div className="row">
         {/* Grid column */}
         <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           {/* Content */}
           <h6 className="text-uppercase fw-bold mb-4">
-            <i className="fas fa-gem me-3" />Earthy Paving
+            Earthy Paving
           </h6>
           {/* <img src="https://res.cloudinary.com/dy1pydfmg/image/upload/v1683693189/logo_500-removebg-preview_fauoek.png" className='logo'/> */}
 
@@ -57,7 +57,7 @@ function Footer() {
         </div>
         {/* Grid column */}
         {/* Grid column */}
-        <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style={{paddingLeft:"80px"}}>
           {/* Links */}
           <h6 className="text-uppercase fw-bold mb-4">
             Products
@@ -78,13 +78,13 @@ function Footer() {
         
         {/* Grid column */}
         {/* Grid column */}
-        <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 Con" style={{paddingLeft:"100px"}}>
           {/* Links */}
           <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i className="fas fa-home me-3" />Achchelu North, Nervely.</p>
+          <p><i className="fas fa-home me-3 ficon" />Achchelu North, Nervely.</p>
           
-          <p><i className="fas fa-phone me-3" /> 0752662427</p>
-          <p><i className="fas fa-print me-3" /> 0763477240</p>
+          <p><i className="fas fa-phone me-3 ficon" /> 0752662427</p>
+          <p><i className="fas fa-print me-3 ficon" /> 0763477240</p>
         </div>
         {/* Grid column */}
       </div>

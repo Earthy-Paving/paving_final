@@ -15,7 +15,7 @@ function AdminDashboard() {
         <Container className="dashboard">
             <Tab.Container defaultActiveKey="products">
                 <Row>
-                    <Col sm={3}>
+                    <Col sm={3} style={{background:"#152B51"}}>
                         <Nav variant="pills" className="flex-column">
                             <Nav.Item>
                                 <Nav.Link className="sathuu" eventKey="products" style={{cursor:"pointer"}}>Products</Nav.Link>

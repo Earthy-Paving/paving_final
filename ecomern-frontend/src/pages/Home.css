@@ -145,7 +145,8 @@ h1 {
 .hero-secondary {
   padding: 10px 0;
   text-align: justify;
-  margin-left: 200px;
+  /* margin-left: 200px; */
+  margin-right: -200px;
 }
 
 h2 {
