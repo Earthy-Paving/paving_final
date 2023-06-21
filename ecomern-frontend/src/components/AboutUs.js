@@ -9,41 +9,41 @@ const AboutUs = () => {
       <Navigation/> 
             <div className="about-us-container">
         <div className="about-us-header">
-          <h1>About Us</h1>
+          <h1 style={{fontSize:"70px", fontFamily:"Futurama Bold Font"}}>About Us</h1>
           <p style={{fontFamily:"sans-serif", fontSize:"25px"}}>Welcome to our website! We are a team of passionate individuals dedicated to providing high-quality products and excellent customer service.</p>
         </div>
 
-        <div className="about-us-section">
-        <div className="about-us-content">
-            <h2>Our Story</h2>
-            <p>Over the years, our dedication and passion have propelled us forward. We started as a small group of enthusiasts, driven by a common goal. With relentless determination, we overcame challenges and seized opportunities, steadily growing our company. Our commitment to excellence and customer satisfaction has been the foundation of our success. As word spread about our innovative products, more and more people joined us on this incredible journey.</p>
-          </div>
-          <div className="about-us-image">
-            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686327680/our-story-new-removebg-preview_gdrbpa.png" alt="Teamwork" />
-          </div>
-          
-        </div>
+        <div class="about-us-section">
+    <div class="about-us-content">
+        <h2>Our Story</h2>
+        <p>Over the years, our dedication and passion have propelled us forward. We started as a small group of enthusiasts, driven by a common goal. With relentless determination, we overcame challenges and seized opportunities, steadily growing our company. Our commitment to excellence and customer satisfaction has been the foundation of our success. As word spread about our innovative products, more and more people joined us on this incredible journey.</p>
+    </div>
+    <div class="about-us-image">
+        <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686327680/our-story-new-removebg-preview_gdrbpa.png" alt="Teamwork" />
+    </div>
+</div>
 
-        <div className="about-us-section">
-          <div className="about-us-content">
-            <h2>Our Mission</h2>
-            <p>At <b>Earthy Paving</b>, we believe that innovation is the key to transforming the world. We adopt a forward-thinking approach, combining cutting-edge technology with creative thinking to develop groundbreaking solutions. Our team of talented individuals, with diverse backgrounds and expertise, collaborates closely to explore new possibilities and push the boundaries of what's possible. By fostering a culture of collaboration, curiosity, and openness, we encourage the free flow of ideas and ensure that every voice is heard.</p>
-          </div>
-          <div className="about-us-image">
-            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686117739/our-mission-removebg-preview_psrymz.png" alt="Mission" />
-          </div>
-        </div>
+<div class="about-us-section">
+<div class="about-us-image">
+        <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686117739/our-mission-removebg-preview_psrymz.png" alt="Mission" />
+    </div>
+    <div class="about-us-content">
+        <h2>Our Mission</h2>
+        <p>At <b>Earthy Paving</b>, we believe that innovation is the key to transforming the world. We adopt a forward-thinking approach, combining cutting-edge technology with creative thinking to develop groundbreaking solutions. Our team of talented individuals, with diverse backgrounds and expertise, collaborates closely to explore new possibilities and push the boundaries of what's possible. By fostering a culture of collaboration, curiosity, and openness, we encourage the free flow of ideas and ensure that every voice is heard.</p>
+    </div>
+    
+</div>
 
-        <div className="about-us-section">
-        <div className="about-us-content">
-            <h2>Our Values</h2>
-            <p>At <b>Earthy Paving</b>, our vision is to create a better future through innovation and technology. We envision a world where our products and services empower individuals and businesses to thrive, where barriers are broken, and new possibilities are realized. With a focus on sustainability and social responsibility, we aim to contribute to a more equitable and environmentally conscious society. Through our unwavering commitment to our vision, we strive to make a lasting impact on the world.</p>
-          </div>
-          <div className="about-us-image">
-            <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686118751/human-resources-vector-removebg-preview_iq0efb.png" alt="Values" />
-          </div>
-          
-        </div>
+<div class="about-us-section">
+    <div class="about-us-content">
+        <h2>Our Values</h2>
+        <p>At <b>Earthy Paving</b>, our vision is to create a better future through innovation and technology. We envision a world where our products and services empower individuals and businesses to thrive, where barriers are broken, and new possibilities are realized. With a focus on sustainability and social responsibility, we aim to contribute to a more equitable and environmentally conscious society. Through our unwavering commitment to our vision, we strive to make a lasting impact on the world.</p>
+    </div>
+    <div class="about-us-image">
+        <img src="https://res.cloudinary.com/dejwpag1r/image/upload/v1686118751/human-resources-vector-removebg-preview_iq0efb.png" alt="Values" />
+    </div>
+</div>
+
 
         {/* <div className="about-us-section">
           <div className="about-us-content">
@@ -56,7 +56,7 @@ const AboutUs = () => {
           </div>
         </div> */}
 
-        <div className="about-us-section">
+        <div className="about-us-section2">
           <div className="about-us-content">
             <h2>Our Team</h2>
           </div>

@@ -130,11 +130,12 @@ import { useCreateProductMutation } from "../services/appApi";
 import axios from "../axios";
 import "./NewProduct.css";
 import Navigation from "../components/Navigation";
+// import { createUploadWidget } from "cloudinary-react";
 
 function NewProduct() {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
-  const [price, setPrice] = useState("");
+  const [price, setPrice] = useState(""); 
   const [category, setCategory] = useState("");
   const [images, setImages] = useState([]);
   const [imgToRemove, setImgToRemove] = useState(null);
@@ -167,7 +168,6 @@ function NewProduct() {
         }
       });
   }
-
   function showWidget() {
     const widget = window.cloudinary.createUploadWidget(
       {

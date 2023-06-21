@@ -25,15 +25,15 @@ function Home() {
             <div>
               <Navigation/>
             </div>
-            <div className="top" style={{marginTop:"0px"}}>
+            <div className="top" style={{marginTop:"0px", background:"#1f2937"}}>
             <div className="hero">
                 {/* <h1 style={{color:"#fff"}}>EARTHY PAVING</h1> */}
                 <div className="hero-secondary">
-                    <p>WE MAKE YOUR DREAM PAVING BEST.</p>
-<p>Your Satisfaction is our responsibility </p>
-                     <p>For best Paving services. </p>
-                   <p>Contact EARTHY PAVING</p> 
-                     To see our product.
+                    <p style={{fontSize:"50px"}}>WE MAKE YOUR DREAM PAVING BEST.</p>
+                    <p style={{fontSize:"30px", fontFamily:"lora"}}>Your Satisfaction is our responsibility </p>
+                     <p style={{fontSize:"30px", fontFamily:"lora"}}>For Best Paving services. </p>
+                   <p style={{fontSize:"30px", fontFamily:"lora"}}>Contact <b style={{color:"#BA9364"}}> EARTHY PAVING </b></p> 
+                     <p style={{fontSize:"30px", fontFamily:"lora"}}>To see our product.</p>
                      
                      </div>
                 <LinkContainer to="/category/all">
@@ -41,7 +41,7 @@ function Home() {
                 </LinkContainer>
             </div>  
             <div className="video">
-                <video controls loop="true" autoplay="autoplay" muted style={{height:"380px", marginTop:"-230px", marginRight:"-190px"}}>
+                <video controls loop="true" autoplay="autoplay" muted style={{height:"550px",width: '1500px', marginTop:"0px", marginRight:"-190px"}}>
                     <source src={video} type="video/mp4"/>
                 </video>
             </div>
@@ -62,7 +62,7 @@ function Home() {
             
             
             <div className="featured-products-container container mt-4">
-                <h2 style={{"backgroundColor":"#f3f3f3"}}>Latest products</h2>
+                <h2 style={{"backgroundColor":"#f3f3f3","font-family":'Raleway'}}>Latest products</h2>
                 {/* last products here */}
                 <div className="d-flex justify-content-center flex-wrap" style={{"backgroundColor":"#f3f3f3"}}>
                     {latestProducts.map((product) => (

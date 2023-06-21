@@ -1,41 +1,20 @@
 import React from 'react';
-import "./Footer.css"
+import "./Footer.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 
+// npm install bootstrap font-awesome jquery popper.js
+
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 function Footer() {
   return (
     <div>
        {/* Footer */}
 <footer className="text-center text-lg-start bg-light text-muted">
-  {/* Section: Social media */}
-  {/* <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"> */}
-    {/* Left */}
-    {/* <div className="me-5 d-none d-lg-block" style={{"backgroundColor":'#f8f8f9'}}> */}
-      {/* <span>Get connected with us on social networks:</span> */}
-    {/* </div> */}
-    {/* Left */}
-    {/* Right */}
-    {/* <div style={{"backgroundColor":"#f8f8f9"}}> */}
-      {/* <a href className="me-4 text-reset"> */}
-        {/* <i className="fab fa-facebook-f" /> */}
-      {/* </a> */}
-      {/* <a href className="me-4 text-reset"> */}
-        {/* <i className="fab fa-twitter" /> */}
-      {/* </a> */}
-      {/* <a href className="me-4 text-reset"> */}
-        {/* <i className="fab fa-google" /> */}
-      {/* </a> */}
-      {/* <a href className="me-4 text-reset">
-        <i className="fab fa-instagram" />
-      </a> */}
-      {/* <a href className="me-4 text-reset"> */}
-        {/* <i className="fab fa-linkedin" /> */}
-      {/* </a> */}
-     
-    {/* </div> */}
-    {/* Right */}
-  {/* </section> */}
-  {/* Section: Social media */}
+
   {/* Section: Links  */}
   <section className="footer">
     <div className="container text-center text-md-start mt-5 " style={{paddingTop:"15px"}}>
@@ -47,15 +26,34 @@ function Footer() {
           <h6 className="text-uppercase fw-bold mb-4">
             Earthy Paving
           </h6>
-          {/* <img src="https://res.cloudinary.com/dy1pydfmg/image/upload/v1683693189/logo_500-removebg-preview_fauoek.png" className='logo'/> */}
 
-          <p>
+          <span>
             Pave Your Waying Earthy Paving.
-            We Always Be With You <br /><br /> <strong>   © 2023 Copyright: Earthy Paving </strong>
+            We Always Be With You </span>   
 
-          </p>
+
+          {/* <div > */}
+              <div className="me-5 d-none d-lg-block full">
+                
+                  <a href="https://web.facebook.com/profile.php?id=100093182706511" target='blank' className="me-4 text-reset socialIcon facebook">
+                    <i className="fab fa-facebook-f" />
+                  </a>
+                  <a href="#" target='blank' className="me-4 text-reset socialIcon twitter">
+                    <i className="fab fa-twitter" />
+                  </a>
+                  <a href="#" target='blank' className="me-4 text-reset socialIcon google">
+                    <i className="fab fa-google" />
+                  </a>
+                  <a href="#" target='blank' className="me-4 text-reset socialIcon insta">
+                    <i className="fab fa-instagram" />
+                  </a>
+                
+              </div>
+          {/* </div> */}
+
+          
         </div>
-        {/* Grid column */}
+
         {/* Grid column */}
         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style={{paddingLeft:"80px"}}>
           {/* Links */}
@@ -74,10 +72,7 @@ function Footer() {
           
         </div>
         {/* Grid column */}
-        {/* Grid column */}
-        
-        {/* Grid column */}
-        {/* Grid column */}
+       
         <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 Con" style={{paddingLeft:"100px"}}>
           {/* Links */}
           <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
@@ -88,18 +83,15 @@ function Footer() {
         </div>
         {/* Grid column */}
       </div>
-      {/* Grid row */}
+      <hr style={{width:"100%"}}></hr>
+      <span style={{marginLeft:"500px"}}>   © 2023 Copyright: All Rights reserved by <b>Earthy Paving </b></span>
     </div>
+    
+
   </section>
-  {/* Section: Links  */}
-  {/* Copyright */}
-  {/* <div className="text-center p-4" style={{backgroundColor: 'rgba(0, 0, 0, 0.05)'}}>
-    © 2023 Copyright:
-    <p className="text-reset fw-bold">Earthy Paving</p>
-  </div> */}
-  {/* Copyright */}
+  
+ 
 </footer>
-{/* Footer */}
 
     </div>
   )

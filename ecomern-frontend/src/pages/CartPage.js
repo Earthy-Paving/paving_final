@@ -82,7 +82,9 @@ function CartPage() {
                                 <h3 className="h4 pt-4">Total: Rs{user.cart.total}</h3>
                             </div>
                         </>
-                        <Button className="btn" style={{"backgroundColor":'white'}} onClick={Checkout}><Link to="/checkout" className="link">Proceed to Checkout</Link></Button>
+                        <Link to="/checkout" className="link">
+                        <Button className="btn" style={{"backgroundColor":'#152B51'}} onClick={Checkout}>Proceed to Checkout</Button>
+                        </Link>
                     </Col>
                     </>
                 )}
