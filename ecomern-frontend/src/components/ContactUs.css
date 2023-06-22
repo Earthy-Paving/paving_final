@@ -7,17 +7,16 @@
   font-family: 'Poppins', sans-serif;
 } */
 
-/* body {
+body {
   min-height: 100vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-} */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  /* background-position: center; */
+  /* position: relative; */
+}
 
 /* body::after {
   content: "";
@@ -29,7 +28,7 @@
   background-color: rgba(0,0,0,0.8);
 } */
 
-section {
+section1 {
   position: relative;
   z-index: 3;
   padding-top: 50px;
@@ -89,10 +88,14 @@ section {
 .contact-info-icon i {
   font-size: 30px;
   line-height: 70px;
+  margin-left: 0px !important;
+
 }
 
 .contact-info-content {
   margin-left: 20px;
+  margin-top: 10px;
+
 }
 
 .contact-info-content h4 {

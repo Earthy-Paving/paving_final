@@ -33,18 +33,18 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="contact-us-container1">
+    <section1 className="contact-us-container1">
       <div className="container2">
-        <h2 className="contact-us-title">Contact Us</h2>
-        <div className="row1">
+        <h2 className="contact-us-title" style={{color:"#fff"}}>Contact Us</h2>
+        <div className="row1" style={{marginTop:"50px"}}>
           <div className="contact-info">
             <div className="contact-info-item">
               <div className="contact-info-icon">
                 <i className="fas fa-home phone"></i>
               </div>
               <div className="contact-info-content">
-                <h4>Address</h4>
-                <p style={{color:"#000"}}>Achchelu North, Nervely.</p>
+                <h4 style={{paddingRight:"100px"}}>Address</h4>
+                <p style={{color:"#fff"}}>Achchelu North, Nervely.</p>
               </div>
             </div>
             <div className="contact-info-item">
@@ -52,8 +52,8 @@ const ContactUs = () => {
                 <i className="fas fa-phone phone"></i>
               </div>
               <div className="contact-info-content">
-                <h4>Phone</h4>
-                <p style={{color:"#000"}}>0752662427</p>
+                <h4 style={{paddingRight:"28px"}}>Phone</h4>
+                <p style={{color:"#fff"}}>0752662427</p>
               </div>
             </div>
             <div className="contact-info-item">
@@ -61,8 +61,8 @@ const ContactUs = () => {
                 <i className="fas fa-envelope phone"></i>
               </div>
               <div className="contact-info-content">
-                <h4>Email</h4>
-                <p style={{color:"#000"}}>earthypaving@gmail.com</p>
+                <h4 style={{paddingRight:"130px"}}>Email</h4>
+                <p style={{color:"#fff"}}>earthypaving@gmail.com</p>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ const ContactUs = () => {
           <button onClick={handleDismiss}>Dismiss</button>
         </div>
       )}
-    </section>
+    </section1>
   );
 };
 

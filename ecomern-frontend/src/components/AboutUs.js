@@ -5,12 +5,12 @@ import ContactUs from './ContactUs';
 
 const AboutUs = () => {
   return (
-    <div>
+    <div id='About'>
       <Navigation/> 
             <div className="about-us-container">
         <div className="about-us-header">
           <h1 style={{fontSize:"70px", fontFamily:"Futurama Bold Font"}}>About Us</h1>
-          <p style={{fontFamily:"sans-serif", fontSize:"25px"}}>Welcome to our website! We are a team of passionate individuals dedicated to providing high-quality products and excellent customer service.</p>
+          <p style={{fontFamily:"sans-serif", fontSize:"25px", color:"#fff"}}>Welcome to our website! We are a team of passionate individuals dedicated to providing high-quality products and excellent customer service.</p>
         </div>
 
         <div class="about-us-section">
@@ -58,7 +58,7 @@ const AboutUs = () => {
 
         <div className="about-us-section2">
           <div className="about-us-content">
-            <h2>Our Team</h2>
+            <h2 style={{color:"#fff"}}>Our Team</h2>
           </div>
           <br/>
           <div className="team-members">

@@ -111,3 +111,19 @@ margin-top: 130px;
   font-size: 20px;
   font-weight: bolder;
 } */
+.inputCount{
+  width: 50%;
+  border-radius: 5px !important;
+  background-color: rgb(233, 229, 229);
+  border-top: none;
+  border-left: none;
+}
+
+.P2C{
+  background-color: #152b51 !important;
+  color: rgb(241, 237, 237);
+}
+
+.P2C:hover{
+   background-color: #1d4180 !important;
+}

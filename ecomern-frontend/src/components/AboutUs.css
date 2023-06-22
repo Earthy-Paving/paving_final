@@ -9,6 +9,7 @@
   
   align-items: center;
   justify-content: center;
+  
 }
 
 .about-us-header {
@@ -19,7 +20,7 @@
 .about-us-header h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  color: #333333;
+  color: #fff;
 }
 
 .about-us-section {
@@ -39,18 +40,18 @@ grid-template-columns: 1fr 1fr;
 .about-us-content h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #333333;
+  color: #fff;
 }
 
 .about-us-content p {
   font-size: 18px;
-  color: #555555;
+  color: #fff;
   line-height: 1.6;
   text-align: justify !important;
   font-family: sans-serif;
 }
 
-.btn {
+/* .btn {
   display: inline-block;
   padding: 12px 24px;
   font-size: 16px;
@@ -59,11 +60,11 @@ grid-template-columns: 1fr 1fr;
   color: #ffffff;
   border-radius: 4px;
   transition: background-color 0.3s ease;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
   background-color: #e53e42;
-}
+} */
 
 .team-members {
   display: flex;
@@ -92,13 +93,12 @@ grid-template-columns: 1fr 1fr;
 }
 
 .team-member-name {
-  font-size: 18px;
-  color: #333333;
+  color: #fff;
 }
 
 .team-member-role {
   font-size: 16px;
-  color: #555555;
+  color: #feeeee;
 }
 
 /* Responsive Styles */
@@ -136,4 +136,11 @@ grid-template-columns: 1fr 1fr;
   .team-member-role {
     font-size: 14px;
   }
+}
+
+#About{
+  background-image: url(https://res.cloudinary.com/dejwpag1r/image/upload/v1687376131/photo-1660154294160-755d22e6ea78_gzmklm.jpg);
+  background-size: cover;
+  margin-top: -50px;
+  margin-bottom: -40px;
 }

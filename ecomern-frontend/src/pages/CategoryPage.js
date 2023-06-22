@@ -76,8 +76,7 @@ function CategoryPage() {
         style={{
           width: "19%",
           marginLeft: "42%",
-          background: "white",
-          marginTop: "20px",
+          marginTop: "20px"
         }}
       >
         <input

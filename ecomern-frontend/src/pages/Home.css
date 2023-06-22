@@ -94,7 +94,7 @@ padding: 30px;
   align-items: center;
   width: 415px;
   height: 250px;
-  margin-top:230px;
+  margin-top:270px;
   margin-left: 50px;
   cursor:pointer;
 }
@@ -132,8 +132,8 @@ h1, .logo, button, .action {
   height: 60px;
   font-size: 18px ;
   border-radius: 15px;
-  margin-top: 100px;
-  margin-left: 180px;
+  margin-top: 90px;
+  margin-left: 220px;
 }
 .btn-orderNow:hover{
   background-color: #6FB1FF;

@@ -9,8 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { updateProducts } from "../features/productSlice";
 import ProductPreview from "../components/ProductPreview";
 import Navigation from "../components/Navigation";
-// import Carousel from "../components/carousel"
-import video from '../components/images/landing.mp4'
+import video from '../components/images/video.mp4'
 function Home() {
     const dispatch = useDispatch();
     const products = useSelector((state) => state.products);
@@ -29,7 +28,7 @@ function Home() {
             <div className="hero">
                 {/* <h1 style={{color:"#fff"}}>EARTHY PAVING</h1> */}
                 <div className="hero-secondary">
-                    <p style={{fontSize:"50px"}}>WE MAKE YOUR DREAM PAVING BEST.</p>
+                    <p style={{fontSize:"50px"}}>WE MAKE YOUR DREAM PAVING BEST</p>
                     <p style={{fontSize:"30px", fontFamily:"lora"}}>Your Satisfaction is our responsibility </p>
                      <p style={{fontSize:"30px", fontFamily:"lora"}}>For Best Paving services. </p>
                    <p style={{fontSize:"30px", fontFamily:"lora"}}>Contact <b style={{color:"#BA9364"}}> EARTHY PAVING </b></p> 
@@ -41,7 +40,7 @@ function Home() {
                 </LinkContainer>
             </div>  
             <div className="video">
-                <video controls loop="true" autoplay="autoplay" muted style={{height:"550px",width: '1500px', marginTop:"0px", marginRight:"-190px"}}>
+                <video controls loop="true" autoplay="autoplay" muted style={{height:"550px",width: '1500px', marginRight:"-190px"}}>
                     <source src={video} type="video/mp4"/>
                 </video>
             </div>
