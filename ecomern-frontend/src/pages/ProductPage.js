@@ -78,9 +78,9 @@ function ProductPage() {
               />
             </Col>
             <Col lg={6} className="pt-4" style={{marginTop:"-25px", marginLeft:"-35px"}}>
-              <h1>{product.name}</h1>
+              <h1 style={{"font-family":'Raleway'}}>{product.name}</h1>
               <p>
-                <Badge bg="primary">{product.category}</Badge>
+                <Badge bg="primary" style={{"font-family":'Raleway'}}>{product.category}</Badge>
               </p>
               <p className="product__price">Rs.{product.price}</p>
               <p style={{ textAlign: "justify" }} className="py-3">
@@ -111,7 +111,7 @@ function ProductPage() {
                           image: product.pictures[0].url,
                         })
                       }
-                    style={{backgroundColor:"#152B51"}}>
+                    style={{backgroundColor:"#152B51", "font-family":'Raleway'}}>
                       Add to cart
                     </Button>
                   </ButtonGroup>
@@ -139,8 +139,8 @@ function ProductPage() {
             </Col>
           </Row>
           <div className="my-4">
-            <h2>Similar Products</h2>
-            <div className="d-flex justify-content-center align-items-center flex-wrap" style={{marginRight:"-200px"}}>
+            <h2 style={{"font-family":'Raleway'}}>Similar Products</h2>
+            <div className="d-flex justify-content-center align-items-center flex-wrap" style={{marginRight:"-200px","font-family":'Raleway'}}>
               <AliceCarousel
                 mouseTracking
                 items={similarProducts}
