@@ -95,7 +95,7 @@ function CartPage() {
                                 </div>
                             </>
                             <Link to="/checkout" className="link">
-                            <Button className="P2C">Proceed to Checkout</Button> 
+                            <Button className="P2C" style={{"font-family":'Raleway'}}>Proceed to Checkout</Button> 
 
                             </Link>
 

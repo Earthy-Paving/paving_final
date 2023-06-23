@@ -70,7 +70,7 @@ function Home() {
                 </div>
                 <div><br /><br />
                     <Link to="/category/all" style={{ "textAlign": "right", "display": "block", "textDecoration": "none", "backgroundColor":"#f3f3f3" }}>
-                        <button className="see" style={{"borderRadius":"15px", "background-color": "#152d51", "fontWeight":"bold", "fontSize":"1.3rem", "color":"#BA9364"}}>
+                        <button className="see" style={{"borderRadius":"15px", "background-color": "#152d51", "fontWeight":"bold", "fontSize":"1.3rem", "color":"#BA9364", "font-family":'Raleway'}}>
                         See more
                         </button>
                     </Link>
@@ -81,10 +81,10 @@ function Home() {
                 {/* <img src="https://res.cloudinary.com/learn-code-10/image/upload/v1654093280/xkia6f13xxlk5xvvb5ed.png" /> */}
             </div>
             <div className="recent-products-container container mt-4">
-                <h2 style={{"backgroundColor":"#f3f3f3", "textDecoration":"underline"}}>Categories</h2>
+                <h2 style={{"backgroundColor":"#f3f3f3", "textDecoration":"underline", "font-family":'Raleway'}}>Categories</h2>
                 <Row >
                     {categories.map((category) => (
-                        <LinkContainer to={`/category/${category.name.toLocaleLowerCase()}`}>
+                        <LinkContainer style={{"font-family":'Raleway'}} to={`/category/${category.name.toLocaleLowerCase()}`}>
                             <Col md={4}>
                                 <div style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${category.img})`, gap: "10px" }} className="category-tile">
                                     {category.name}

@@ -190,7 +190,7 @@ function NewProduct() {
       <Row>
         <Col md={6} className="new-product__form--container" style={{ marginLeft: "340px" }}>
           <Form style={{ width: "100%" }} onSubmit={handleSubmit}>
-            <h1 style={{color:"#000"}} className="mt-4">Create a product</h1>
+            <h1 style={{color:"#000", "font-family":'Raleway'}} className="mt-4">Create a product</h1>
             {isSuccess && <Alert variant="success">Product created with success</Alert>}
             {isError && <Alert variant="danger">{error.data}</Alert>}
             <Form.Group className="mb-3">
