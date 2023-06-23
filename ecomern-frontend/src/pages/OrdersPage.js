@@ -38,7 +38,7 @@ function OrdersPage() {
           <Navigation/>
         <Container className="orders">
             <div className="orderpage">
-            <h1 className="text-center">Your orders</h1>
+            <h1 className="text-center">My orders</h1>
             <Table responsive striped bordered hover>
                 <thead>
                     <tr>

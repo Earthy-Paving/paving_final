@@ -61,7 +61,7 @@ function Home() {
             
             
             <div className="featured-products-container container mt-4">
-                <h2 style={{"backgroundColor":"#f3f3f3","font-family":'Raleway'}}>Latest products</h2>
+                <h2 style={{"backgroundColor":"#f3f3f3","font-family":'Raleway'}}>Latest Products</h2>
                 {/* last products here */}
                 <div className="d-flex justify-content-center flex-wrap" style={{"backgroundColor":"#f3f3f3"}}>
                     {latestProducts.map((product) => (
@@ -81,7 +81,7 @@ function Home() {
                 {/* <img src="https://res.cloudinary.com/learn-code-10/image/upload/v1654093280/xkia6f13xxlk5xvvb5ed.png" /> */}
             </div>
             <div className="recent-products-container container mt-4">
-                <h2 style={{"backgroundColor":"#f3f3f3", "textDecoration":"underline"}}>Categories</h2>
+                <h2 style={{"backgroundColor":"#f3f3f3", "textDecoration":"underline",fontFamily:"Raleway"}}>Categories</h2>
                 <Row >
                     {categories.map((category) => (
                         <LinkContainer to={`/category/${category.name.toLocaleLowerCase()}`}>
