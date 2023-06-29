@@ -89,7 +89,7 @@ function DashboardProducts() {
         <td>{customId}</td>
         <td>{name}</td>
         <td>{price}</td>
-        <td>
+        <td><br/>
           <Link to={`/product/${_id}/edit`} className="Color btn-warning">
             Edit
           </Link>
@@ -107,10 +107,11 @@ function DashboardProducts() {
     <Table striped bordered hover responsive>
       <thead>
         <tr>
-          <th></th>
+          <th>Product</th>
           <th>Product ID</th>
           <th>Product Name</th>
           <th>Product Price</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>

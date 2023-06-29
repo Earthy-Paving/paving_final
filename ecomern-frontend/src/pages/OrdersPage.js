@@ -38,11 +38,11 @@ function OrdersPage() {
           <Navigation/>
         <Container className="orders">
             <div className="orderpage">
-            <h1 className="text-center">My orders</h1>
+            <h1 className="text-center">My Orders</h1><br/><br/>
             <Table responsive striped bordered hover>
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>Order Id</th>
                         <th>Status</th>
                         <th>Date</th>
                         <th>Total</th>
@@ -51,7 +51,7 @@ function OrdersPage() {
                 <tbody>
                     {orders.map((order) => (
                         <tr>
-                            <td>{order._id}</td>
+                            <td>{order.orderId}</td>
                             <td>
                                 <Badge bg={`${order.status === "processing" ? "warning" : "success"}`} text="white">
                                     {order.status}
@@ -65,7 +65,7 @@ function OrdersPage() {
                 </tbody>
             </Table>
             </div>
-        </Container>
+        </Container><br/><br/><br/><br/><br/><br/><br/><br/>
         </div>
     );
 }

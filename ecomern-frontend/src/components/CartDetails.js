@@ -3,12 +3,12 @@ import "./CartDetails.css";
 
 const CartDetails = () => {
   return (
-    <div style={{textAlign:'center', paddingLeft:'230px'}}>
+    <div style={{textAlign:'center', paddingLeft:'230px', marginTop:'-60px'}}>
     <div className="myCard">
       <div className="innerCard">
         <div className="frontSide">
-          <p className="title">Earthy Paving</p>
-          <p>Hover Me</p>
+          <p className="title">Thank You For Your Order.<br/> We Will Contact You Soon.</p>
+          {/* <p>For Contact</p> */}
         </div>
         <div className="backSide">
           <p className="title">Our Details</p>

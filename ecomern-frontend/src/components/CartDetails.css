@@ -47,12 +47,12 @@
   
   .frontSide,
   .frontSide::before {
-    background: linear-gradient(43deg, #2d5aa9 0%, #0093E9 46%, #2d5aa9 100%);
+    background: linear-gradient(43deg, #BA9463 20%, #152B51 70%);
   }
   
   .backSide,
   .backSide::before {
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-image: linear-gradient(160deg, #152B51 25%, #BA9463 100%);
   }
   
   .backSide {

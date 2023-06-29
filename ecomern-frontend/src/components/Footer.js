@@ -11,7 +11,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 
 function Footer() {
   return (
-    <div>
+    <div >
        {/* Footer */}
 <footer className="text-center text-lg-start bg-light text-muted">
 

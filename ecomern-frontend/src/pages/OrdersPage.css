@@ -6,9 +6,10 @@
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     background-color: #fbf7f7;
-    padding: 30px;
+    padding: 65px;
     margin: 130px auto 0;
     max-width: 1300px; /* Set the maximum width to control responsiveness */
+    margin-top: 200px;
   }
   
   .orderpage {

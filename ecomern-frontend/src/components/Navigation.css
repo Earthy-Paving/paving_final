@@ -1,3 +1,4 @@
+
 .earth {
   padding: 5px;
   margin: 0;
@@ -30,7 +31,7 @@
 .navlinknav:hover{
   cursor: pointer;
   color: white !important;
-  background-color: #133571 !important;
+  background-color: #153977 !important;
 }
 .navlinknav1 {
   color: white;
@@ -155,4 +156,8 @@
 
 .fas{
   margin-left: 50% !important;
+}
+
+.logoutBtn:hover{
+     background-color: rgb(209, 6, 6) !important;
 }

@@ -127,7 +127,7 @@ function Navigation({ userImage }) {
                       <Nav.Link>My Orders </Nav.Link>
                     </LinkContainer>
                   )}
-                  <NavDropdown.Item onClick={handleLogout} style={{ backgroundColor: "red" }}>
+                  <NavDropdown.Item onClick={handleLogout} className="logoutBtn">
                     Logout
                   </NavDropdown.Item>
                 </NavDropdown>

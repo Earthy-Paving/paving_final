@@ -65,5 +65,15 @@ router.post('/:id/updateNotifications', async(req, res)=> {
   }
 })
 
+//delete user
+router.delete('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    await User.findByIdAndDelete(id);
+    res.status(200).json({ message: 'Order deleted successfully' });
+  } catch (e) {
+    res.status(400).json(e.message);
+  }
+});
 
 module.exports = router;

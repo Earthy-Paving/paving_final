@@ -58,4 +58,15 @@ router.patch('/:id/mark-shipped', async(req, res)=> {
     res.status(400).json(e.message);
   }
 })
+
+// Delete an order by ID
+router.delete('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    await Order.findByIdAndDelete(id);
+    res.status(200).json({ message: 'Order deleted successfully' });
+  } catch (e) {
+    res.status(400).json(e.message);
+  }
+});
 module.exports = router;

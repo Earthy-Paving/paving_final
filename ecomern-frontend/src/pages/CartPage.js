@@ -46,17 +46,16 @@ function CartPage() {
             <Navigation />
             <Container style={{ minHeight: "50vh" }} className="cart-container">
                 {cart.length === 0 ? (
-                    <div style={{ paddingLeft: "450px" }}>
-                        <div className="book">
-                            <p style={{ padding: "40px", fontSize: "20px", fontWeight: "bolder" }}>Shopping cart is empty. Add products to your cart</p>
-                            <div className="cover" style={{ fontSize: "20px", fontWeight: "bolder" }}>
-                                <p>Shopping Status</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div style={{ textAlign:"center", marginTop:"70px"}}>
+                    <button class="butto">
+                         <span class="span">Shopping Card  Is Empty</span>
+                         <span class="span red">Add Somthing In Your card</span>
+                   </button>
+                 </div>
                 ) : (
                     <>
                         <Col md={12} className="col">
+                            <h1 style={{color:"#BA9463"}}><b>Cart Page</b></h1><br/><br/>
                             <>
                                 <Table responsive="sm" className="cart-table">
                                     <thead>
@@ -64,7 +63,7 @@ function CartPage() {
                                             <th>&nbsp;</th>
                                             <th>Product</th>
                                             <th>Price</th>
-                                            <th>Quantity(feet)</th>
+                                            <th>Quantity</th>
                                             <th>Subtotal</th>
                                         </tr>
                                     </thead>
@@ -93,16 +92,16 @@ function CartPage() {
                                 <div>
                                     <h3 className="h4 pt-4">Total: Rs{total || 0}</h3>
                                 </div>
-                            </>
+                            </><br/>
                             <Link to="/checkout" className="link">
-                            <Button className="P2C" style={{"font-family":'Raleway'}}>Proceed to Checkout</Button> 
+                            <Button className="P2C bclr" style={{"font-family":'Raleway'}} >Proceed to Checkout</Button> 
 
                             </Link>
 
                         </Col>
                     </>
                 )}
-            </Container>
+            </Container><br/><br/><br/><br/><br/><br/>
         </>
     );
 }

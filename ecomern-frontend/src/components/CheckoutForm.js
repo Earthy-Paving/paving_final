@@ -51,9 +51,9 @@ function CheckoutForm() {
     }
 
     return (
-        <Col className="cart-payment-container">
+        <Col className="cart-payment-container" style={{marginTop:"95px"}}>
             <Form onSubmit={handlePay}>
-                <h1>Checkout Form</h1>
+                <h1 style={{color:"#BA9463"}}>Checkout Form</h1>
                 <Row style={{marginTop:"10px"}}>
                     {alertMessage && <Alert>{alertMessage}</Alert>}
                     <Col md={6}>
@@ -95,7 +95,7 @@ function CheckoutForm() {
                 </Row>
                 <label htmlFor="card-element">Card</label>
                 <CardElement id="card-element" />
-                <Button  className="mt-3" type="submit" disabled={user.cart.count <= 0 || paying || isSuccess}>
+                <Button  className="pay" type="submit" disabled={user.cart.count <= 0 || paying || isSuccess}>
                     {paying ? "Processing..." : "Pay"}
                 </Button>
             </Form>

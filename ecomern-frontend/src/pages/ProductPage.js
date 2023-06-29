@@ -77,13 +77,13 @@ function ProductPage() {
                 controlsStrategy="alternate"
               />
             </Col>
-            <Col lg={6} className="pt-4" style={{marginTop:"-25px", marginLeft:"-35px"}}>
-              <h1 style={{"font-family":'Raleway'}}>{product.name}</h1>
+            <Col lg={6} className="pt-4" style={{marginTop:"30px", marginLeft:"-35px"}}>
+              <h1 style={{"font-family":'Raleway', color:"#BA9463"}}>{product.name}</h1>
               <p>
                 <Badge bg="primary" style={{"font-family":'Raleway'}}>{product.category}</Badge>
               </p>
               <p className="product__price">Rs.{product.price}</p>
-              <p style={{ textAlign: "justify" }} className="py-3">
+              <p style={{ textAlign: "justify", marginLeft:"30px", marginRight:"30px" }} className="py-3">
                 <strong>Description:</strong> {product.description} for One square
               </p>
               {user && !user.isAdmin && (
@@ -111,7 +111,7 @@ function ProductPage() {
                           image: product.pictures[0].url,
                         })
                       }
-                    style={{backgroundColor:"#152B51", "font-family":'Raleway'}}>
+                    style={{backgroundColor:"#152B51", "font-family":'Raleway'}} className="bclr">
                       Add to cart
                     </Button>
                   </ButtonGroup>
@@ -131,7 +131,7 @@ function ProductPage() {
               )}<br />
               {isSuccess && (
                 <ToastMessage
-                  bg="info"
+                  bg="custom-toast"
                   title="Added to cart"
                   body={`${product.name} is in your cart`}
                 />
@@ -139,7 +139,7 @@ function ProductPage() {
             </Col>
           </Row>
           <div className="my-4">
-            <h2 style={{"font-family":'Raleway'}}>Similar Products</h2>
+            <h1 style={{"font-family":'Raleway', color:"#BA9463"}}>Similar Products</h1>
             <div className="d-flex justify-content-center align-items-center flex-wrap" style={{marginRight:"-200px","font-family":'Raleway'}}>
               <AliceCarousel
                 mouseTracking

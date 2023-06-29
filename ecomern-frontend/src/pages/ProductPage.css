@@ -64,3 +64,10 @@ margin-top: 120px !important;
 .Edit:hover{
     color: #fff !important;
 }
+.bclr{
+    color:#BA9463;
+}
+
+.bclr:hover{
+    color: #fff;
+}
